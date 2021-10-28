@@ -1,0 +1,53 @@
+--- main menu
+S> What would you like to do?
+
+--- flights search (incremental)
+U> find a flight
+S> From where?
+U> Gothenburg
+S> Where's the destination?
+U> Riga
+S> When to depart?
+U> next month
+S> I found*
+
+--- flights search (one-shot)
+U> find a flight from Stockholm to Kaunas in December
+S> I found*
+
+--- flights search (over-answering)
+U> find a flight from Stockholm to Gothenburg
+S> When to depart?
+U> anytime
+S> I found*
+
+--- narrow searches (incremental)
+U> find cheaper ones
+S> What is the maximum budget?
+U> 100
+S> Direct or non-direct flights?
+U> both
+S> I narrowed down your searches, and found*
+
+--- narrow searches (over-answering)
+U> find only direct flights
+S> What is the maximum budget?
+U> 40
+S> I narrowed down your searches, and found*
+
+--- change currency (one-shot)
+U> change currency to Swedish Krona
+S> The currency is now set to Swedish Krona
+
+--- change currency (incremental)
+U> change the currency
+S> Which currency?
+U> Euro
+S> The currency is now set to Euro
+
+
+--- travel info 
+U> What are the entry restrictions
+S> Where's the destination?
+U> Barcelona
+S> Here's *

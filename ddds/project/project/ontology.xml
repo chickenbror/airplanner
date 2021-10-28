@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ontology name="ProjectOntology">
+
+    <!-- month_or_phrase = "phrase or month-name" since they are mandatory, while year/day can be optional -->
+    <sort name="month_or_phrase" dynamic="true"/>
+        <predicate name="month_or_phrase_from" sort="month_or_phrase"/>
+        <!-- <predicate name="month_or_phrase_to" sort="month_or_phrase"/> -->
+            <individual name="anytime" sort="month_or_phrase"/>
+            <individual name="tomorrow" sort="month_or_phrase"/>
+            <individual name="next_month" sort="month_or_phrase"/>
+            <individual name="jan" sort="month_or_phrase"/>  <individual name="feb" sort="month_or_phrase"/>
+            <individual name="mar" sort="month_or_phrase"/>  <individual name="apr" sort="month_or_phrase"/>
+            <individual name="may" sort="month_or_phrase"/>  <individual name="jun" sort="month_or_phrase"/>
+            <individual name="jul" sort="month_or_phrase"/>  <individual name="aug" sort="month_or_phrase"/>
+            <individual name="sep" sort="month_or_phrase"/>  <individual name="oct" sort="month_or_phrase"/>
+            <individual name="nov" sort="month_or_phrase"/>  <individual name="dec" sort="month_or_phrase"/>
+
+    <sort name="year" />
+        <predicate name="year_from" sort="year"/>
+        <!-- <predicate name="year_to" sort="year"/> -->
+            <individual name="y2021" sort="year"/>
+            <individual name="y2022" sort="year"/>
+
+    <sort name="day" />
+        <predicate name="day_from" sort="day"/>
+        <!-- <predicate name="day_to" sort="day"/> -->
+            <individual name="d01" sort="day"/>  <individual name="d02" sort="day"/>  <individual name="d03" sort="day"/>  
+            <individual name="d04" sort="day"/>  <individual name="d05" sort="day"/>  <individual name="d06" sort="day"/>  
+            <individual name="d07" sort="day"/>  <individual name="d08" sort="day"/>  <individual name="d09" sort="day"/>  
+            <individual name="d10" sort="day"/>  <individual name="d11" sort="day"/>  <individual name="d12" sort="day"/>  
+            <individual name="d13" sort="day"/>  <individual name="d14" sort="day"/>  <individual name="d15" sort="day"/>  
+            <individual name="d16" sort="day"/>  <individual name="d17" sort="day"/>  <individual name="d18" sort="day"/>  
+            <individual name="d19" sort="day"/>  <individual name="d20" sort="day"/>  <individual name="d21" sort="day"/>  
+            <individual name="d22" sort="day"/>  <individual name="d23" sort="day"/>  <individual name="d24" sort="day"/>  
+            <individual name="d25" sort="day"/>  <individual name="d26" sort="day"/>  <individual name="d27" sort="day"/>  
+            <individual name="d28" sort="day"/>  <individual name="d29" sort="day"/>  <individual name="d30" sort="day"/>  
+            <individual name="d31" sort="day"/>
+    
+
+    <sort name="city" dynamic="true"/>
+        <predicate name="city_from" sort="city"/>
+        <predicate name="city_to" sort="city"/>
+            <individual name="city_got" sort="city"/>
+            <individual name="city_rix" sort="city"/>
+            <individual name="city_kun" sort="city"/>
+            <individual name="city_arn" sort="city"/>
+            <individual name="city_bcn" sort="city"/>
+
+    <sort name="info" dynamic="true"/>
+        <predicate name="info_choice" sort="info"/>
+            <individual name="entry" sort="info"/>
+            <individual name="quarantine" sort="info"/>
+            <individual name="testing" sort="info"/>
+            
+
+    <predicate name="flights" sort="string"/>
+    <predicate name="flights_filtered" sort="string"/>
+    <predicate name="covid_info" sort="string"/>
+    
+
+    <sort name="price" dynamic="true"/>
+        <predicate name="max_price" sort="price" feature_of="flights_filtered"/>
+            <individual name="price_5" sort="price"/>
+            <individual name="price_10" sort="price"/>
+            <individual name="price_15" sort="price"/>
+            <individual name="price_20" sort="price"/>
+            <individual name="price_25" sort="price"/>
+            <individual name="price_30" sort="price"/>
+            <individual name="price_35" sort="price"/>
+            <individual name="price_40" sort="price"/>
+            <individual name="price_45" sort="price"/>
+            <individual name="price_50" sort="price"/>
+            <individual name="price_55" sort="price"/>
+            <individual name="price_60" sort="price"/>
+            <individual name="price_65" sort="price"/>
+            <individual name="price_70" sort="price"/>
+            <individual name="price_75" sort="price"/>
+            <individual name="price_80" sort="price"/>
+            <individual name="price_85" sort="price"/>
+            <individual name="price_90" sort="price"/>
+            <individual name="price_95" sort="price"/>
+            <individual name="price_100" sort="price"/>
+            <individual name="price_no_limit" sort="price"/>
+    <sort name="directness" dynamic="true"/>
+        <predicate name="direct_choice" sort="directness" feature_of="flights_filtered"/>
+            <individual name="direct_only" sort="directness"/>
+            <individual name="non_direct_only" sort="directness"/>
+            <individual name="both" sort="directness"/>
+
+    <action name="set_currency"/>
+    <sort name="currency" dynamic="true"/>
+        <predicate name="currency_to_set" sort="currency"/>
+            <individual name="EUR" sort="currency"/>
+            <individual name="SEK" sort="currency"/>
+            <individual name="USD" sort="currency"/>
+            <individual name="TWD" sort="currency"/>
+            <individual name="JPY" sort="currency"/>
+            <individual name="KRW" sort="currency"/>
+            <individual name="GBP" sort="currency"/>
+            <individual name="HKD" sort="currency"/>
+            <individual name="AUD" sort="currency"/>
+            <individual name="SGD" sort="currency"/>
+            
+
+    <!-- TODO 
+    make csv lists of cites, countries
+    month_or_phrases(6 fmts: Dec, Dec 2021, 25 Dec, Dec 25, Dec 25 2021, 25 Dec 2021), prices(1-2000) -->
+
+</ontology>

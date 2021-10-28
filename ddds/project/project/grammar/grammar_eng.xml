@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammar>
+
+<greeting>Hello! </greeting>
+
+<!-- build-ins -->
+  <action name="top">
+    <one-of>
+      <item>main menu</item>
+      <item>top</item>
+      <item>beginning</item>
+      <item>cancel</item>
+      <item>forget it</item>
+      <item>never mind</item>
+      <item>abort</item>
+    </one-of>
+  </action>
+  <action name="up">
+    <one-of>
+      <item>up</item>
+      <item>back</item>
+      <item>go back</item>
+    </one-of>
+  </action>
+  <action name="how">
+    <one-of>
+      <item>how</item> <item>in what way</item> <item>which way</item>
+    </one-of>
+  </action>
+
+<!-- How users ask covid info, args=(city, info_choice) -->
+  <question speaker="user" predicate="covid_info" type="wh_question">
+    <one-of>
+      <item>tell me about travel restrictions</item>
+      <item>travel restrictions</item>  <item>travel information</item> 
+  
+      <item>travel restrictions in <slot predicate="city_to"/> </item>
+      <item>travel information in <slot predicate="city_to"/> </item>
+      <item>what's the travel information in <slot predicate="city_to"/> </item>
+      <item>what are the travel restrictions in <slot predicate="city_to"/> </item>
+
+      <item><slot predicate="info_choice"/> in <slot predicate="city_to"/> </item>
+      <item>tell me about <slot predicate="info_choice"/> in <slot predicate="city_to"/> </item>
+      <item>is there <slot predicate="info_choice"/> in <slot predicate="city_to"/> </item>
+      <item>are there <slot predicate="info_choice"/> in <slot predicate="city_to"/> </item>
+
+      <item>what's the <slot predicate="info_choice"/> in <slot predicate="city_to"/> </item>
+      <item>what are the <slot predicate="info_choice"/> in <slot predicate="city_to"/> </item>
+
+      <item>tell me about the <slot predicate="info_choice"/> </item>
+      <item>what's the <slot predicate="info_choice"/>  </item> <item>what are the <slot predicate="info_choice"/> </item>
+
+    </one-of>
+  </question>
+
+<!-- How users search for flights, args=(city1, city2, month_or_phrase1, ?month_or_phrase2, ?max_price, ?direct_choice) -->
+  <question speaker="user" predicate="flights" type="wh_question">
+    <one-of>
+      <item>start a new search</item>
+      <item>find flights</item> <item>book a flight</item> <item>search for flights</item>
+      <item>find a flight</item>
+      <item>find a flight from <slot predicate="city_from"/> </item>
+      <item>find a flight to <slot predicate="city_to"/> </item>
+      <item>find a flight from <slot predicate="city_from" /> to <slot predicate="city_to"/> </item>
+      <item>from <slot predicate="city_from"/> to <slot predicate="city_to"/> </item>
+      <item><slot predicate="city_from"/> to <slot predicate="city_to"/> </item>
+      <item>from <slot predicate="city_from"/></item>
+      <item>to <slot predicate="city_to"/> </item>
+
+      
+      <item>find a flight from <slot predicate="city_from"/> to <slot predicate="city_to"/> <slot predicate="month_or_phrase_from"/> </item>
+      <item>find a flight from <slot predicate="city_from"/> to <slot predicate="city_to"/> in <slot predicate="month_or_phrase_from"/> </item>
+   
+      <item>find a flight <slot predicate="month_or_phrase_from"/> </item>
+      <item>find a flight in <slot predicate="month_or_phrase_from"/> </item>
+    
+      <item>find a flight on <slot predicate="day_from"/> <slot predicate="month_or_phrase_from"/> </item>
+      <item>find a flight on <slot predicate="month_or_phrase_from"/> <slot predicate="day_from"/> </item>
+      <item>find a flight on <slot predicate="day_from"/> <slot predicate="month_or_phrase_from"/> <slot predicate="year_from"/></item>
+      <item>find a flight on <slot predicate="month_or_phrase_from"/> <slot predicate="day_from"/> <slot predicate="year_from"/></item>
+    
+      <item>in <slot predicate="month_or_phrase_from"/></item>
+      <item>in <slot predicate="month_or_phrase_from"/> <slot predicate="year_from"/></item>
+      <item><slot predicate="month_or_phrase_from"/> <slot predicate="year_from"/></item>
+
+      <item><slot predicate="day_from"/> <slot predicate="month_or_phrase_from"/> <slot predicate="year_from"/></item>
+      <item><slot predicate="month_or_phrase_from"/> <slot predicate="day_from"/> <slot predicate="year_from"/></item>
+      <item><slot predicate="day_from"/> <slot predicate="month_or_phrase_from"/> </item>
+      <item><slot predicate="month_or_phrase_from"/> <slot predicate="day_from"/> </item>
+      
+
+      <item> find a <slot predicate="direct_choice"/> flight from <slot predicate="city_from"/> to <slot predicate="city_to"/> </item>
+      <item> find a flight from <slot predicate="city_from"/> to <slot predicate="city_to"/> up to <slot predicate="max_price"/> </item>
+
+
+
+    </one-of>
+  </question>
+
+<!-- How users narrow down previous search results, args=(max_price, direct_choice) -->
+  <question speaker="user" predicate="flights_filtered" type="wh_question">
+    <one-of>
+      <item>narrow down searches</item> <item>filter searches</item> 
+      <item>narrow searches</item> <item>narrow the searches</item>
+      <item>find something cheaper</item> <item>find cheaper ones</item> <item>I want something cheaper</item>
+      <item> find <slot predicate="direct_choice"/> flights </item> <item> I want <slot predicate="direct_choice"/> flights </item>
+      <item> find flights up to <slot predicate="max_price"/> </item>
+      <item> set the maximum price to <slot predicate="max_price"/> </item> <item> set maximum price to <slot predicate="max_price"/> </item>
+      <item> find <slot predicate="direct_choice"/> flights up to <slot predicate="max_price"/></item>
+    </one-of>
+  </question>
+  
+<!-- How to express predicates -->
+  <question type="wh_question" speaker="all" predicate="flights">flights</question>
+  <question type="wh_question" speaker="all" predicate="flights_filtered">last searches</question>
+  <question type="wh_question" speaker="all" predicate="covid_info">COVID updates in your destination</question>
+  <question type="wh_question" speaker="all" predicate="currecy_set_response"> currecy setting </question>
+
+  <question type="wh_question" predicate="month_or_phrase_from" speaker="system">when to depart</question>
+  <question type="wh_question" predicate="year_from" speaker="system">which year to leave</question>
+  <question type="wh_question" predicate="day_from" speaker="system">which day of the month to depart</question>
+
+  
+  <question type="wh_question" predicate="city_from" speaker="system">from where</question>
+  <question type="wh_question" predicate="city_to" speaker="system">where's the destination</question>
+
+  <question type="wh_question" predicate="max_price" speaker="system">what's the maximum budget</question>
+  <question type="wh_question" predicate="direct_choice" speaker="system"> direct or non-direct flights</question>
+  <question type="wh_question" predicate="info_choice" speaker="system"> entry, quarantine or testing requirements</question>
+  <question type="wh_question" predicate="currency_to_set" speaker="system">which currency</question>
+
+<answer speaker="system" predicate="flights">
+  I found <slot predicate="flights"/>
+</answer>
+
+<answer speaker="system" predicate="flights_filtered">
+  I narrowed down your searches, and found <slot predicate="flights_filtered"/>
+</answer>
+
+<answer speaker="system" predicate="covid_info">
+  Here's <slot predicate="covid_info"/>
+</answer>
+
+<report action="SetCurrency" status="ended">The currency is now set to <slot predicate="currency_to_set"/></report>
+
+<action name="set_currency">  
+    <one-of>
+      <item>
+        <vp>
+          <infinitive>change</infinitive>
+          <imperative>change</imperative>
+          <ing-form>changing</ing-form>
+          <object>the currency</object>
+        </vp>
+      </item>
+      <item>set the currency</item> <item>set currency</item>
+      <item>change the currency</item> <item>change currency</item>
+      <item>change the currency to <slot predicate="currency_to_set"/> </item>
+      <item>change currency to <slot predicate="currency_to_set"/> </item>
+    </one-of>
+  </action>
+
+<!--month_or_phrases-->
+  <individual name="anytime"> 
+    <one-of>
+      <item>whenever</item>  <item>anytime</item>
+    </one-of>
+    </individual>
+
+  <individual name="tomorrow">tomorrow</individual>
+  <individual name="next_month">next month</individual>
+  <individual name="jan">January</individual>
+  <individual name="feb">February</individual>
+  <individual name="mar">March</individual>
+  <individual name="apr">April</individual>
+  <individual name="may">May</individual>
+  <individual name="jun">June</individual>
+  <individual name="jul">July</individual>
+  <individual name="aug">August</individual>
+  <individual name="sep">September</individual>
+  <individual name="oct">October</individual>
+  <individual name="nov">November</individual>
+  <individual name="dec">December</individual>
+
+<!-- days -->
+  <individual name="d01">1</individual>  <individual name="d02">2</individual>  <individual name="d03">3</individual>  
+  <individual name="d04">4</individual>  <individual name="d05">5</individual>  <individual name="d06">6</individual>  
+  <individual name="d07">7</individual>  <individual name="d08">8</individual>  <individual name="d09">9</individual>  
+  <individual name="d10">10</individual>  <individual name="d11">11</individual>  <individual name="d12">12</individual>  
+  <individual name="d13">13</individual>  <individual name="d14">14</individual>  <individual name="d15">15</individual>  
+  <individual name="d16">16</individual>  <individual name="d17">17</individual>  <individual name="d18">18</individual>  
+  <individual name="d19">19</individual>  <individual name="d20">20</individual>  <individual name="d21">21</individual>  
+  <individual name="d22">22</individual>  <individual name="d23">23</individual>  <individual name="d24">24</individual>  
+  <individual name="d25">25</individual>  <individual name="d26">26</individual>  <individual name="d27">27</individual>  
+  <individual name="d28">28</individual>  <individual name="d29">29</individual>  <individual name="d30">30</individual>  
+  <individual name="d31">31</individual>
+
+<!-- year -->
+  <individual name="y2021">2021</individual>  <individual name="y2022">2022</individual>
+
+<!--cities-->
+  <individual name="city_got">Gothenburg</individual>
+  <individual name="city_rix">Riga</individual>
+  <individual name="city_kun">Kaunas</individual>
+  <individual name="city_arn">Stockholm</individual>
+  <individual name="city_bcn">Barcelona</individual>
+<!--countries-->
+  <individual name="se">Sweden</individual>
+  <individual name="lv">Latvia</individual>
+  <individual name="lt">Lithuania</individual>
+  <individual name="es">Spain</individual>
+
+<!-- prices -->
+  <individual name="price_5">5</individual>
+  <individual name="price_10">10</individual>
+  <individual name="price_15">15</individual>
+  <individual name="price_20">20</individual>
+  <individual name="price_25">25</individual>
+  <individual name="price_30">30</individual>
+  <individual name="price_35">35</individual>
+  <individual name="price_40">40</individual>
+  <individual name="price_45">45</individual>
+  <individual name="price_50">50</individual>
+  <individual name="price_55">55</individual>
+  <individual name="price_60">60</individual>
+  <individual name="price_65">65</individual>
+  <individual name="price_70">70</individual>
+  <individual name="price_75">75</individual>
+  <individual name="price_80">80</individual>
+  <individual name="price_85">85</individual>
+  <individual name="price_90">90</individual>
+  <individual name="price_95">95</individual>
+  <individual name="price_100">100</individual>
+  <individual name="price_no_limit">
+      <one-of>
+        <item>whatever</item> <item>doesn't matter</item>
+        <item>limitless</item> <item>any</item> <item>no limit</item>
+      </one-of>
+    </individual>
+  
+  
+<!-- directness choices -->
+  <individual name="direct_only"> 
+      <one-of>
+        <item>direct</item> 
+        <item>only direct</item>
+        <item>direct only</item> 
+        <item>direct flights</item>
+      </one-of>
+    </individual>
+  
+  <individual name="non_direct_only">
+      <one-of>
+        <item>non-direct</item> 
+        <item>only non-direct</item>
+        <item>non-direct only</item> 
+        <item>non-direct flights</item>
+      </one-of>
+    </individual>
+  
+  <individual name="both"> 
+      <one-of>
+        <item>both</item> <item>doesn't matter</item>
+        <item>both direct and non-direct</item> <item>any</item> <item>all</item>
+      </one-of>
+    </individual>
+
+<!-- currencies -->
+  <individual name="EUR">
+    <one-of>
+      <item>Euros</item>  <item>Euro</item>
+    </one-of>
+    </individual>
+
+  <individual name="USD">
+    <one-of>
+      <item>American Dollars</item> <item>U.S. Dollars</item> <item>U.S. Dollar</item> <item>US Dollar</item>
+    </one-of>
+    </individual>
+
+  <individual name="SEK">
+    <one-of>
+      <item>Swedish crowns</item> <item>Swedish crown</item> <item>Swedish Krona</item>
+    </one-of>
+    </individual>
+
+  <individual name="TWD">
+    <one-of>
+      <item>Taiwanese dollars</item> <item>Taiwan dollars</item> <item>New Taiwan Dollar</item>
+    </one-of>
+    </individual>
+
+  <individual name="JPY">
+    <one-of>
+      <item>Yen</item> <item>Japanese Yen</item>
+    </one-of>
+    </individual>
+
+  <individual name="KRW">
+    <one-of>
+       <item>South Korean Won</item> <item>Won</item> <item>Korean Won</item>
+    </one-of>
+    </individual>
+
+  <individual name="GBP">
+    <one-of>
+       <item>British pounds</item> <item>Pounds</item> <item>Great Britain Pound</item>
+    </one-of>
+    </individual>
+
+  <individual name="HKD">
+    <one-of>
+       <item>Hong Kong Dollars</item> <item>HK dollar</item> <item>Hong Kong Dollar</item>
+    </one-of>
+    </individual>
+
+  <individual name="AUD">
+    <one-of>
+       <item>Aussie bucks</item> <item>Aussie dollars</item> <item>Australian Dollar</item>
+    </one-of>
+    </individual>
+
+  <individual name="SGD">
+    <one-of>
+       <item>Singapore dollars</item> <item>Singporean dollar</item> <item>Singapore Dollar</item>
+    </one-of>
+    </individual>
+  
+  <report action="Report_none" status="ended">I didn't find any flights</report>
+
+<!-- info choices -->
+  <individual name="entry">  
+    <one-of>
+       <item>entry requirements</item> <item>entry requirement</item> <item>entry information</item> 
+       <item>entry restrictions</item> <item>entry restriction</item>
+    </one-of>
+    </individual>
+
+  <individual name="quarantine">
+    <one-of>
+       <item>quarantine requirements</item> <item>quarantine requirement</item> <item>quarantine information</item>
+       <item>quarantine </item>
+    </one-of>
+    </individual>
+  <individual name="testing">
+    <one-of>
+       <item>testing requirements</item> <item>testing requirement</item> <item>testing information</item>
+       <item>testing</item> <item>covid test</item>
+    </one-of>
+    </individual>
+
+</grammar>

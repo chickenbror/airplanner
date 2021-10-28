@@ -1,0 +1,5 @@
+ <report action="Search_flights" status="ended">performed Search flights <answer:city_from> <answer:city_to> <answer:date_from> <answer:date_to>.</report>
+
+ <answer predicate="next_membership_level" speaker="system">you need <slot predicate="next_membership_points" type="individual"/> points to reach <slot predicate="next_membership_level" type="individual"/> level</answer>
+
+ <assume_issue type="wh_question" predicate="flight_departure"/>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<domain name="ProjectDomain" is_super_domain="true">
+
+<goal type="perform" action="top">
+    <plan>
+      <forget_all/>
+      <findout type="goal"/>
+    </plan>
+  </goal>
+
+
+
+<!-- New search -->
+  <goal type="resolve" question_type="wh_question" predicate="flights">
+    <plan>
+      <findout type="wh_question" predicate="city_from"/>
+      <findout type="wh_question" predicate="city_to"/>
+
+      <findout type="wh_question" predicate="month_or_phrase_from"/>
+      <bind type="wh_question" predicate="day_from"/>
+      <bind type="wh_question" predicate="year_from"/>
+
+      <bind type="wh_question" predicate="max_price"/>
+      <bind type="wh_question" predicate="direct_choice"/>
+      <invoke_service_query type="wh_question" predicate="flights"/>
+
+      <forget predicate="city_from"/> 
+      <forget predicate="city_to"/>
+      <forget predicate="month_or_phrase_from"/>
+
+      <if>
+        <condition><proposition predicate="flights" value="None"/> </condition>
+        <then> <invoke_service_action name="Report_none" postconfirm="true"/> </then>
+      </if>
+    </plan>
+    <!-- <postplan>
+      <findout type="yn_question">
+        <resolve predicate="flights_filtered"/>
+      </findout>
+    </postplan> -->
+  </goal>
+
+<!-- Filter saved searches -->
+  <goal type="resolve" question_type="wh_question" predicate="flights_filtered">
+    <plan>
+      <findout type="wh_question" predicate="max_price"/>
+      <findout type="wh_question" predicate="direct_choice"/>
+      <invoke_service_query type="wh_question" predicate="flights_filtered"/> 
+
+      <if>
+        <condition><proposition predicate="flights_filtered" value="None"/> </condition>
+        <then> <invoke_service_action name="Report_none" postconfirm="true"/> </then>
+      </if>
+
+    </plan>
+  </goal>
+
+<!-- Query destination covid info -->
+  <goal type="resolve" question_type="wh_question" predicate="covid_info">
+    <plan>
+      <findout type="wh_question" predicate="city_to"/>
+      <findout type="wh_question" predicate="info_choice"/>
+      <invoke_service_query type="wh_question" predicate="covid_info"/> 
+
+    </plan>
+  </goal>
+
+<!-- change currency -->
+  <goal type="perform" action="set_currency">
+    <plan>
+      <findout type="wh_question" predicate="currency_to_set"/>
+      <invoke_service_action name="SetCurrency" postconfirm="true"/>
+    </plan>
+  </goal>
+
+  <!-- TODO action new search, filter/narrow search  -->
+
+
+</domain>

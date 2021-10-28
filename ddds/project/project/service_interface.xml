@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service_interface>
+
+ <query name="flights">
+        <parameters>
+            <parameter predicate="city_from" format="grammar_entry"/>
+            <parameter predicate="city_to" format="grammar_entry"/>
+
+            <parameter predicate="month_or_phrase_from" format="grammar_entry"/>
+            <parameter predicate="year_from" format="grammar_entry" optional="true"/>
+            <parameter predicate="day_from" format="grammar_entry" optional="true"/>
+            
+            <parameter predicate="max_price" format="grammar_entry" optional="true"/>
+            <parameter predicate="direct_choice" format="value" optional="true"/>
+        </parameters>
+        <target>
+            <http endpoint="http://http-service/search_flights"/>
+        </target>
+    </query>
+
+<query name="flights_filtered">
+        <parameters>
+            <parameter predicate="max_price" format="grammar_entry"/>
+            <parameter predicate="direct_choice" format="value" />
+        </parameters>
+        <target>
+            <http endpoint="http://http-service/filter_flights"/>
+        </target>
+    </query>
+
+<query name="covid_info">
+        <parameters>
+            <parameter predicate="city_to" format="grammar_entry"/>
+            <parameter predicate="info_choice" format="value" />
+        </parameters>
+        <target>
+            <http endpoint="http://http-service/get_covid_info"/>
+        </target>
+    </query>
+
+<action name="SetCurrency">
+    <parameters>
+      <parameter predicate="currency_to_set" format="value"/>
+    </parameters>
+    <failure_reasons/>
+    <target>
+      <http endpoint="http://http-service/set_currency"/>
+    </target>
+  </action>
+  
+<!-- No arg -->
+<action name="Report_none">
+        <parameters/>
+        <failure_reasons/>
+        <target>
+            <frontend/>
+        </target>
+    </action>
+
+</service_interface>
