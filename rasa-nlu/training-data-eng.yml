@@ -7,26 +7,26 @@ nlu:
     - set currency
     - change the currency
     - change currency
-    - change the currency to [Comorian Franc ](project.sort.currency)
-    - change the currency to [Czech Koruna](project.sort.currency)
-    - change the currency to [EUR](project.sort.currency)
-    - change the currency to [Egyptian Pound](project.sort.currency)
-    - change the currency to [Forint](project.sort.currency)
-    - change the currency to [HRK](project.sort.currency)
-    - change the currency to [Kuwaiti Dinar](project.sort.currency)
-    - change the currency to [Riel](project.sort.currency)
-    - change the currency to [SHP](project.sort.currency)
-    - change the currency to [STD](project.sort.currency)
-    - change currency to [Balboa](project.sort.currency)
-    - change currency to [Bermudian Dollar](project.sort.currency)
-    - change currency to [FJD](project.sort.currency)
-    - change currency to [Gourde](project.sort.currency)
-    - change currency to [HRK](project.sort.currency)
-    - change currency to [IRR](project.sort.currency)
-    - change currency to [LYD](project.sort.currency)
-    - change currency to [Pound Sterling](project.sort.currency)
-    - change currency to [Riel](project.sort.currency)
-    - change currency to [TWD](project.sort.currency)
+    - change the currency to [Aussie bucks](project.sort.currency)
+    - change the currency to [Aussie dollars](project.sort.currency)
+    - change the currency to [Euro](project.sort.currency)
+    - change the currency to [Euros](project.sort.currency)
+    - change the currency to [HK dollar](project.sort.currency)
+    - change the currency to [Hong Kong Dollar](project.sort.currency)
+    - change the currency to [Hong Kong Dollars](project.sort.currency)
+    - change the currency to [Korean Won](project.sort.currency)
+    - change the currency to [South Korean Won](project.sort.currency)
+    - change the currency to [Won](project.sort.currency)
+    - change currency to [Euro](project.sort.currency)
+    - change currency to [Euros](project.sort.currency)
+    - change currency to [Japanese Yen](project.sort.currency)
+    - change currency to [Singapore Dollar](project.sort.currency)
+    - change currency to [Singapore dollars](project.sort.currency)
+    - change currency to [Singporean dollar](project.sort.currency)
+    - change currency to [Swedish Krona](project.sort.currency)
+    - change currency to [Swedish crown](project.sort.currency)
+    - change currency to [Swedish crowns](project.sort.currency)
+    - change currency to [Yen](project.sort.currency)
 
 - intent: project:question::flights
   examples: |
@@ -35,442 +35,495 @@ nlu:
     - book a flight
     - search for flights
     - find a flight
-    - find a flight from [Aliağa](project.sort.city)
-    - find a flight from [Chalāla](project.sort.city)
-    - find a flight from [Damāvand](project.sort.city)
-    - find a flight from [Giyani](project.sort.city)
-    - find a flight from [Nakhon Pathom](project.sort.city)
-    - find a flight from [Okaya](project.sort.city)
-    - find a flight from [Satsumasendai](project.sort.city)
-    - find a flight from [Suita](project.sort.city)
-    - find a flight from [Tongshan](project.sort.city)
-    - find a flight from [Turrialba](project.sort.city)
-    - find a flight to [Adelaide Hills](project.sort.city)
-    - find a flight to [Bucheon-si](project.sort.city)
-    - find a flight to [Elbląg](project.sort.city)
-    - find a flight to [Gandia](project.sort.city)
-    - find a flight to [Hell-Ville](project.sort.city)
-    - find a flight to [Lavras](project.sort.city)
-    - find a flight to [Lewiston](project.sort.city)
-    - find a flight to [Pānchla](project.sort.city)
-    - find a flight to [Taylorsville](project.sort.city)
-    - find a flight to [’Aïn Merane](project.sort.city)
-    - find a flight from [Digras]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Pekanbaru]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
-    - find a flight from [Hînceşti]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Konārka]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
-    - find a flight from [Maroubra]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Pontault-Combault]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
-    - find a flight from [Moriya]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Fujioka]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
-    - find a flight from [Paôy Pêt]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Meaux]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
-    - find a flight from [Sulya]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Ventimiglia]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
-    - find a flight from [Tarancón]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Tukuyu]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
-    - find a flight from [Tlaquepaque]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Alīgarh]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
-    - find a flight from [Valladolid]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Failsworth]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
-    - find a flight from [Villabate]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Phetchaburi]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
-    - from [Amasya]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Rosemount]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
-    - from [Augusta]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [São Gonçalo do Amarante]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
-    - from [Ceres]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Dutsen Wai]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
-    - from [Kamoke]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Akivīdu]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
-    - from [Mińsk Mazowiecki]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Pind Dādan Khān]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
-    - from [Pantai Cenang]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Maudaha]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
-    - from [Pematangsiantar]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Pyinmana]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
-    - from [Port-de-Paix]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [La Crescenta-Montrose]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
-    - from [Shiggaon]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Sucre]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
-    - from [West Valley City]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Sotouboua]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
-    - [Ban Chalong]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Chennimalai]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
-    - [Belo sur Tsiribihina]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Baki]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
-    - [Bishopbriggs]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Anantnag]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
-    - [Ipatinga]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Nuth]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
-    - [Khirdalan]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Tyre]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
-    - [Kipushi]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Kongsberg]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
-    - [Kūhdasht]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Khairpur]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
-    - [Longview]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Jatibonico]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
-    - [Medan]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Kelaniya]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
-    - [Qingnian]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Metro]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
-    - from [Deer Park](project.sort.city)
-    - from [Deçan](project.sort.city)
-    - from [Fort Myers](project.sort.city)
-    - from [Imam Qasim](project.sort.city)
-    - from [Marechal Deodoro](project.sort.city)
-    - from [Nyaungdon](project.sort.city)
-    - from [Pamekasan](project.sort.city)
-    - from [Radolfzell am Bodensee](project.sort.city)
-    - from [Ruskin](project.sort.city)
-    - from [Rāwah](project.sort.city)
-    - to [Amman](project.sort.city)
-    - to [Aripuanã](project.sort.city)
-    - to [Herstal](project.sort.city)
-    - to [Kassala](project.sort.city)
-    - to [Lanaken](project.sort.city)
-    - to [Meppel](project.sort.city)
-    - to [Moroleón](project.sort.city)
-    - to [Parbatipur](project.sort.city)
-    - to [St. Pauli](project.sort.city)
-    - to [Wangon](project.sort.city)
-    - find a flight from [Arriaga]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Puteaux]{"entity": "project.sort.city", "role": "project.predicate.city_to"} [whenever](project.sort.month_or_phrase)
-    - find a flight from [Campinas]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Nanto-shi]{"entity": "project.sort.city", "role": "project.predicate.city_to"} [January](project.sort.month_or_phrase)
-    - find a flight from [Ichalkaranji]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Chichibu]{"entity": "project.sort.city", "role": "project.predicate.city_to"} [May](project.sort.month_or_phrase)
-    - find a flight from [Kandiāro]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Fizuli]{"entity": "project.sort.city", "role": "project.predicate.city_to"} [May](project.sort.month_or_phrase)
-    - find a flight from [Kronshtadt]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Hermanus]{"entity": "project.sort.city", "role": "project.predicate.city_to"} [April](project.sort.month_or_phrase)
-    - find a flight from [Mahalapye]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Fort Lee]{"entity": "project.sort.city", "role": "project.predicate.city_to"} [June](project.sort.month_or_phrase)
-    - find a flight from [Muscat]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Kishangarh]{"entity": "project.sort.city", "role": "project.predicate.city_to"} [March](project.sort.month_or_phrase)
-    - find a flight from [M’Sila]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Rawtenstall]{"entity": "project.sort.city", "role": "project.predicate.city_to"} [December](project.sort.month_or_phrase)
-    - find a flight from [Rhenen]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Carrollton]{"entity": "project.sort.city", "role": "project.predicate.city_to"} [next month](project.sort.month_or_phrase)
-    - find a flight from [Suining]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Nowra]{"entity": "project.sort.city", "role": "project.predicate.city_to"} [tomorrow](project.sort.month_or_phrase)
-    - find a flight from [Ash Shaţrah]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Bang Pa-in]{"entity": "project.sort.city", "role": "project.predicate.city_to"} in [January](project.sort.month_or_phrase)
-    - find a flight from [Dubrājpur]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Mollendo]{"entity": "project.sort.city", "role": "project.predicate.city_to"} in [June](project.sort.month_or_phrase)
-    - find a flight from [Fort Portal]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Coconut Creek]{"entity": "project.sort.city", "role": "project.predicate.city_to"} in [June](project.sort.month_or_phrase)
-    - find a flight from [Lüdinghausen]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Haverhill]{"entity": "project.sort.city", "role": "project.predicate.city_to"} in [next month](project.sort.month_or_phrase)
-    - find a flight from [Matozinhos]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Bensekrane]{"entity": "project.sort.city", "role": "project.predicate.city_to"} in [December](project.sort.month_or_phrase)
-    - find a flight from [Melenki]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Gdańsk]{"entity": "project.sort.city", "role": "project.predicate.city_to"} in [whenever](project.sort.month_or_phrase)
-    - find a flight from [Rancho Palos Verdes]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Massillon]{"entity": "project.sort.city", "role": "project.predicate.city_to"} in [whenever](project.sort.month_or_phrase)
-    - find a flight from [Sabadell]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Yonago]{"entity": "project.sort.city", "role": "project.predicate.city_to"} in [next month](project.sort.month_or_phrase)
-    - find a flight from [São Joaquim]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Rubtsovsk]{"entity": "project.sort.city", "role": "project.predicate.city_to"} in [April](project.sort.month_or_phrase)
-    - find a flight from [Tubbergen]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Cobourg]{"entity": "project.sort.city", "role": "project.predicate.city_to"} in [March](project.sort.month_or_phrase)
-    - find a flight [April](project.sort.month_or_phrase)
+    - find a flight from [Bail-Hongal](project.sort.city)
+    - find a flight from [Ciénaga](project.sort.city)
+    - find a flight from [Eagan](project.sort.city)
+    - find a flight from [Kota](project.sort.city)
+    - find a flight from [Ostrów Mazowiecka](project.sort.city)
+    - find a flight from [Seeheim-Jugenheim](project.sort.city)
+    - find a flight from [Thành Phố Hạ Long](project.sort.city)
+    - find a flight from [Verona](project.sort.city)
+    - find a flight from [West Scarborough](project.sort.city)
+    - find a flight from [Zhaogezhuang](project.sort.city)
+    - find a flight to [Bellampalli](project.sort.city)
+    - find a flight to [Hollola](project.sort.city)
+    - find a flight to [Hāora](project.sort.city)
+    - find a flight to [Metapán](project.sort.city)
+    - find a flight to [Myaydo](project.sort.city)
+    - find a flight to [Münster](project.sort.city)
+    - find a flight to [Okcheon](project.sort.city)
+    - find a flight to [Picsi](project.sort.city)
+    - find a flight to [Saldanha](project.sort.city)
+    - find a flight to [Villanueva de la Cañada](project.sort.city)
+    - find a flight from [Adirampattinam]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Nagpur]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
+    - find a flight from [Bhadreswar]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Pacho]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
+    - find a flight from [Brumadinho]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Gebze]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
+    - find a flight from [Gisenyi]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Vence]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
+    - find a flight from [Grottaferrata]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Carrara]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
+    - find a flight from [Mahwah]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Alzey]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
+    - find a flight from [Pallippatti]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Jūrmala]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
+    - find a flight from [Sijunjung]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Helong]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
+    - find a flight from [Witbank]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Scunthorpe]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
+    - find a flight from [Zapopan]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Toms River]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
+    - from [Copenhagen]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Chernaya Rechka]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
+    - from [Fuquay-Varina]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Nordenham]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
+    - from [Gwarzo]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Oldenzaal]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
+    - from [Istaravshan]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Delmas]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
+    - from [Leek]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Rockledge]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
+    - from [Methuen]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Cajicá]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
+    - from [Mulhouse]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Bogale]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
+    - from [Peniche]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Kanpur]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
+    - from [Tacámbaro de Codallos]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Tây Ninh]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
+    - from [Zira]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Rawtenstall]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
+    - [Bad Reichenhall]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Ellwangen]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
+    - [Bologoye]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Pavlovskiy Posad]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
+    - [Eden]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Muttupet]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
+    - [El Alia]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Parnamirim]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
+    - [El Cafetal]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Aki]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
+    - [Greiz]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Disūq]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
+    - [Mariquita]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Nakatsugawa]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
+    - [Nyborg]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Xichang]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
+    - [Rio Tinto]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Sethārja Old]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
+    - [Woonsocket]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Bobrov]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
+    - from [Indaial](project.sort.city)
+    - from [Kaunas](project.sort.city)
+    - from [Kerkera](project.sort.city)
+    - from [Lennestadt](project.sort.city)
+    - from [Lianzhou](project.sort.city)
+    - from [Mamou](project.sort.city)
+    - from [Manamadurai](project.sort.city)
+    - from [Rewāri](project.sort.city)
+    - from [Semiluki](project.sort.city)
+    - from [Vientiane](project.sort.city)
+    - to [Aalst](project.sort.city)
+    - to [Bor](project.sort.city)
+    - to [Caruaru](project.sort.city)
+    - to [Nantong](project.sort.city)
+    - to [Plymouth](project.sort.city)
+    - to [San Pedro de Alcántara](project.sort.city)
+    - to [Sorgun](project.sort.city)
+    - to [Sulya](project.sort.city)
+    - to [Tayga](project.sort.city)
+    - to [Yashkino](project.sort.city)
+    - find a flight from [Agua Dulce]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Morena]{"entity": "project.sort.city", "role": "project.predicate.city_to"} [October](project.sort.month_or_phrase)
+    - find a flight from [Bang Kruai]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Kalmunai]{"entity": "project.sort.city", "role": "project.predicate.city_to"} [April](project.sort.month_or_phrase)
+    - find a flight from [Draveil]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Yozgat]{"entity": "project.sort.city", "role": "project.predicate.city_to"} [September](project.sort.month_or_phrase)
+    - find a flight from [Ducheng]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Madang]{"entity": "project.sort.city", "role": "project.predicate.city_to"} [December](project.sort.month_or_phrase)
+    - find a flight from [Gryfice]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Damietta]{"entity": "project.sort.city", "role": "project.predicate.city_to"} [June](project.sort.month_or_phrase)
+    - find a flight from [Iskandar]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Devgarh]{"entity": "project.sort.city", "role": "project.predicate.city_to"} [December](project.sort.month_or_phrase)
+    - find a flight from [Kafanchan]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [İzmir]{"entity": "project.sort.city", "role": "project.predicate.city_to"} [December](project.sort.month_or_phrase)
+    - find a flight from [Melenki]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Barbosa]{"entity": "project.sort.city", "role": "project.predicate.city_to"} [next month](project.sort.month_or_phrase)
+    - find a flight from [Neem ka Thana]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Sāmbhar]{"entity": "project.sort.city", "role": "project.predicate.city_to"} [May](project.sort.month_or_phrase)
+    - find a flight from [Pratāpgarh]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Futtsu]{"entity": "project.sort.city", "role": "project.predicate.city_to"} [May](project.sort.month_or_phrase)
+    - find a flight from [Djibouti]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Damāvand]{"entity": "project.sort.city", "role": "project.predicate.city_to"} in [October](project.sort.month_or_phrase)
+    - find a flight from [Flörsheim]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Mizunami]{"entity": "project.sort.city", "role": "project.predicate.city_to"} in [whenever](project.sort.month_or_phrase)
+    - find a flight from [Krasnokamsk]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Seaside]{"entity": "project.sort.city", "role": "project.predicate.city_to"} in [whenever](project.sort.month_or_phrase)
+    - find a flight from [Litherland]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Nawābganj]{"entity": "project.sort.city", "role": "project.predicate.city_to"} in [August](project.sort.month_or_phrase)
+    - find a flight from [Lyepyel’]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Dorcheh Pīāz]{"entity": "project.sort.city", "role": "project.predicate.city_to"} in [July](project.sort.month_or_phrase)
+    - find a flight from [Oświęcim]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Bryukhovetskaya]{"entity": "project.sort.city", "role": "project.predicate.city_to"} in [July](project.sort.month_or_phrase)
+    - find a flight from [Paracho de Verduzco]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Koszalin]{"entity": "project.sort.city", "role": "project.predicate.city_to"} in [March](project.sort.month_or_phrase)
+    - find a flight from [Romano Banco]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Kimhae]{"entity": "project.sort.city", "role": "project.predicate.city_to"} in [April](project.sort.month_or_phrase)
+    - find a flight from [Schwabach]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Ashtarak]{"entity": "project.sort.city", "role": "project.predicate.city_to"} in [July](project.sort.month_or_phrase)
+    - find a flight from [Tiflet]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Jāsim]{"entity": "project.sort.city", "role": "project.predicate.city_to"} in [September](project.sort.month_or_phrase)
     - find a flight [August](project.sort.month_or_phrase)
-    - find a flight [December](project.sort.month_or_phrase)
     - find a flight [February](project.sort.month_or_phrase)
-    - find a flight [January](project.sort.month_or_phrase)
     - find a flight [July](project.sort.month_or_phrase)
     - find a flight [June](project.sort.month_or_phrase)
+    - find a flight [May](project.sort.month_or_phrase)
     - find a flight [November](project.sort.month_or_phrase)
-    - find a flight [September](project.sort.month_or_phrase)
+    - find a flight [anytime](project.sort.month_or_phrase)
+    - find a flight [next month](project.sort.month_or_phrase)
     - find a flight [tomorrow](project.sort.month_or_phrase)
+    - find a flight [whenever](project.sort.month_or_phrase)
     - find a flight in [April](project.sort.month_or_phrase)
     - find a flight in [August](project.sort.month_or_phrase)
-    - find a flight in [December](project.sort.month_or_phrase)
     - find a flight in [July](project.sort.month_or_phrase)
-    - find a flight in [June](project.sort.month_or_phrase)
-    - find a flight in [March](project.sort.month_or_phrase)
     - find a flight in [May](project.sort.month_or_phrase)
     - find a flight in [November](project.sort.month_or_phrase)
     - find a flight in [October](project.sort.month_or_phrase)
     - find a flight in [September](project.sort.month_or_phrase)
-    - find a flight on [11](project.sort.day) [May](project.sort.month_or_phrase)
-    - find a flight on [13](project.sort.day) [February](project.sort.month_or_phrase)
-    - find a flight on [16](project.sort.day) [December](project.sort.month_or_phrase)
-    - find a flight on [17](project.sort.day) [December](project.sort.month_or_phrase)
-    - find a flight on [19](project.sort.day) [July](project.sort.month_or_phrase)
-    - find a flight on [1](project.sort.day) [July](project.sort.month_or_phrase)
-    - find a flight on [22](project.sort.day) [February](project.sort.month_or_phrase)
-    - find a flight on [23](project.sort.day) [November](project.sort.month_or_phrase)
-    - find a flight on [25](project.sort.day) [December](project.sort.month_or_phrase)
-    - find a flight on [29](project.sort.day) [October](project.sort.month_or_phrase)
-    - find a flight on [December](project.sort.month_or_phrase) [7](project.sort.day)
-    - find a flight on [February](project.sort.month_or_phrase) [30](project.sort.day)
-    - find a flight on [January](project.sort.month_or_phrase) [9](project.sort.day)
-    - find a flight on [June](project.sort.month_or_phrase) [3](project.sort.day)
-    - find a flight on [March](project.sort.month_or_phrase) [16](project.sort.day)
-    - find a flight on [May](project.sort.month_or_phrase) [22](project.sort.day)
-    - find a flight on [anytime](project.sort.month_or_phrase) [25](project.sort.day)
-    - find a flight on [next month](project.sort.month_or_phrase) [8](project.sort.day)
-    - find a flight on [tomorrow](project.sort.month_or_phrase) [5](project.sort.day)
-    - find a flight on [whenever](project.sort.month_or_phrase) [16](project.sort.day)
-    - find a flight on [11](project.sort.day) [July](project.sort.month_or_phrase) [2022](project.sort.year)
-    - find a flight on [12](project.sort.day) [October](project.sort.month_or_phrase) [2022](project.sort.year)
-    - find a flight on [14](project.sort.day) [February](project.sort.month_or_phrase) [2021](project.sort.year)
-    - find a flight on [22](project.sort.day) [February](project.sort.month_or_phrase) [2021](project.sort.year)
-    - find a flight on [24](project.sort.day) [May](project.sort.month_or_phrase) [2022](project.sort.year)
-    - find a flight on [25](project.sort.day) [November](project.sort.month_or_phrase) [2022](project.sort.year)
-    - find a flight on [30](project.sort.day) [December](project.sort.month_or_phrase) [2021](project.sort.year)
-    - find a flight on [31](project.sort.day) [tomorrow](project.sort.month_or_phrase) [2021](project.sort.year)
-    - find a flight on [7](project.sort.day) [March](project.sort.month_or_phrase) [2021](project.sort.year)
-    - find a flight on [9](project.sort.day) [October](project.sort.month_or_phrase) [2022](project.sort.year)
-    - find a flight on [August](project.sort.month_or_phrase) [27](project.sort.day) [2022](project.sort.year)
-    - find a flight on [December](project.sort.month_or_phrase) [25](project.sort.day) [2022](project.sort.year)
-    - find a flight on [February](project.sort.month_or_phrase) [18](project.sort.day) [2021](project.sort.year)
-    - find a flight on [June](project.sort.month_or_phrase) [6](project.sort.day) [2021](project.sort.year)
-    - find a flight on [March](project.sort.month_or_phrase) [15](project.sort.day) [2021](project.sort.year)
-    - find a flight on [November](project.sort.month_or_phrase) [8](project.sort.day) [2021](project.sort.year)
-    - find a flight on [September](project.sort.month_or_phrase) [20](project.sort.day) [2022](project.sort.year)
-    - find a flight on [anytime](project.sort.month_or_phrase) [25](project.sort.day) [2021](project.sort.year)
-    - find a flight on [next month](project.sort.month_or_phrase) [11](project.sort.day) [2022](project.sort.year)
-    - find a flight on [whenever](project.sort.month_or_phrase) [27](project.sort.day) [2022](project.sort.year)
+    - find a flight in [anytime](project.sort.month_or_phrase)
+    - find a flight in [next month](project.sort.month_or_phrase)
+    - find a flight in [whenever](project.sort.month_or_phrase)
+    - find a flight on [12](project.sort.day) [December](project.sort.month_or_phrase)
+    - find a flight on [20](project.sort.day) [April](project.sort.month_or_phrase)
+    - find a flight on [22](project.sort.day) [June](project.sort.month_or_phrase)
+    - find a flight on [24](project.sort.day) [October](project.sort.month_or_phrase)
+    - find a flight on [26](project.sort.day) [March](project.sort.month_or_phrase)
+    - find a flight on [27](project.sort.day) [February](project.sort.month_or_phrase)
+    - find a flight on [28](project.sort.day) [March](project.sort.month_or_phrase)
+    - find a flight on [4](project.sort.day) [June](project.sort.month_or_phrase)
+    - find a flight on [6](project.sort.day) [September](project.sort.month_or_phrase)
+    - find a flight on [7](project.sort.day) [April](project.sort.month_or_phrase)
+    - find a flight on [April](project.sort.month_or_phrase) [8](project.sort.day)
+    - find a flight on [August](project.sort.month_or_phrase) [26](project.sort.day)
+    - find a flight on [February](project.sort.month_or_phrase) [24](project.sort.day)
+    - find a flight on [January](project.sort.month_or_phrase) [16](project.sort.day)
+    - find a flight on [July](project.sort.month_or_phrase) [9](project.sort.day)
+    - find a flight on [March](project.sort.month_or_phrase) [22](project.sort.day)
+    - find a flight on [May](project.sort.month_or_phrase) [27](project.sort.day)
+    - find a flight on [September](project.sort.month_or_phrase) [13](project.sort.day)
+    - find a flight on [tomorrow](project.sort.month_or_phrase) [17](project.sort.day)
+    - find a flight on [whenever](project.sort.month_or_phrase) [13](project.sort.day)
+    - find a flight on [10](project.sort.day) [April](project.sort.month_or_phrase) [2022](project.sort.year)
+    - find a flight on [13](project.sort.day) [November](project.sort.month_or_phrase) [2022](project.sort.year)
+    - find a flight on [21](project.sort.day) [June](project.sort.month_or_phrase) [2021](project.sort.year)
+    - find a flight on [22](project.sort.day) [March](project.sort.month_or_phrase) [2022](project.sort.year)
+    - find a flight on [24](project.sort.day) [next month](project.sort.month_or_phrase) [2022](project.sort.year)
+    - find a flight on [25](project.sort.day) [April](project.sort.month_or_phrase) [2022](project.sort.year)
+    - find a flight on [29](project.sort.day) [January](project.sort.month_or_phrase) [2021](project.sort.year)
+    - find a flight on [4](project.sort.day) [next month](project.sort.month_or_phrase) [2021](project.sort.year)
+    - find a flight on [6](project.sort.day) [August](project.sort.month_or_phrase) [2021](project.sort.year)
+    - find a flight on [8](project.sort.day) [May](project.sort.month_or_phrase) [2022](project.sort.year)
+    - find a flight on [April](project.sort.month_or_phrase) [24](project.sort.day) [2022](project.sort.year)
+    - find a flight on [August](project.sort.month_or_phrase) [9](project.sort.day) [2022](project.sort.year)
+    - find a flight on [December](project.sort.month_or_phrase) [18](project.sort.day) [2021](project.sort.year)
+    - find a flight on [February](project.sort.month_or_phrase) [30](project.sort.day) [2021](project.sort.year)
+    - find a flight on [July](project.sort.month_or_phrase) [12](project.sort.day) [2021](project.sort.year)
+    - find a flight on [June](project.sort.month_or_phrase) [11](project.sort.day) [2022](project.sort.year)
+    - find a flight on [May](project.sort.month_or_phrase) [24](project.sort.day) [2021](project.sort.year)
+    - find a flight on [November](project.sort.month_or_phrase) [9](project.sort.day) [2021](project.sort.year)
+    - find a flight on [anytime](project.sort.month_or_phrase) [30](project.sort.day) [2021](project.sort.year)
+    - find a flight on [whenever](project.sort.month_or_phrase) [21](project.sort.day) [2021](project.sort.year)
     - in [April](project.sort.month_or_phrase)
+    - in [August](project.sort.month_or_phrase)
+    - in [December](project.sort.month_or_phrase)
     - in [February](project.sort.month_or_phrase)
-    - in [January](project.sort.month_or_phrase)
+    - in [July](project.sort.month_or_phrase)
     - in [June](project.sort.month_or_phrase)
+    - in [March](project.sort.month_or_phrase)
     - in [October](project.sort.month_or_phrase)
     - in [September](project.sort.month_or_phrase)
-    - in [anytime](project.sort.month_or_phrase)
     - in [next month](project.sort.month_or_phrase)
-    - in [tomorrow](project.sort.month_or_phrase)
-    - in [whenever](project.sort.month_or_phrase)
-    - in [August](project.sort.month_or_phrase) [2021](project.sort.year)
-    - in [February](project.sort.month_or_phrase) [2021](project.sort.year)
-    - in [January](project.sort.month_or_phrase) [2021](project.sort.year)
+    - in [April](project.sort.month_or_phrase) [2022](project.sort.year)
+    - in [December](project.sort.month_or_phrase) [2022](project.sort.year)
+    - in [February](project.sort.month_or_phrase) [2022](project.sort.year)
+    - in [January](project.sort.month_or_phrase) [2022](project.sort.year)
+    - in [July](project.sort.month_or_phrase) [2021](project.sort.year)
     - in [March](project.sort.month_or_phrase) [2021](project.sort.year)
-    - in [November](project.sort.month_or_phrase) [2021](project.sort.year)
-    - in [October](project.sort.month_or_phrase) [2021](project.sort.year)
-    - in [September](project.sort.month_or_phrase) [2022](project.sort.year)
-    - in [anytime](project.sort.month_or_phrase) [2022](project.sort.year)
-    - in [next month](project.sort.month_or_phrase) [2022](project.sort.year)
+    - in [May](project.sort.month_or_phrase) [2022](project.sort.year)
+    - in [November](project.sort.month_or_phrase) [2022](project.sort.year)
+    - in [October](project.sort.month_or_phrase) [2022](project.sort.year)
     - in [whenever](project.sort.month_or_phrase) [2022](project.sort.year)
     - [April](project.sort.month_or_phrase) [2021](project.sort.year)
-    - [August](project.sort.month_or_phrase) [2021](project.sort.year)
-    - [July](project.sort.month_or_phrase) [2022](project.sort.year)
-    - [May](project.sort.month_or_phrase) [2021](project.sort.year)
+    - [December](project.sort.month_or_phrase) [2021](project.sort.year)
+    - [January](project.sort.month_or_phrase) [2022](project.sort.year)
+    - [June](project.sort.month_or_phrase) [2021](project.sort.year)
+    - [March](project.sort.month_or_phrase) [2021](project.sort.year)
+    - [May](project.sort.month_or_phrase) [2022](project.sort.year)
     - [November](project.sort.month_or_phrase) [2021](project.sort.year)
-    - [October](project.sort.month_or_phrase) [2022](project.sort.year)
-    - [September](project.sort.month_or_phrase) [2021](project.sort.year)
     - [anytime](project.sort.month_or_phrase) [2022](project.sort.year)
-    - [tomorrow](project.sort.month_or_phrase) [2022](project.sort.year)
+    - [next month](project.sort.month_or_phrase) [2022](project.sort.year)
     - [whenever](project.sort.month_or_phrase) [2022](project.sort.year)
-    - [1](project.sort.day) [October](project.sort.month_or_phrase) [2022](project.sort.year)
-    - [20](project.sort.day) [October](project.sort.month_or_phrase) [2022](project.sort.year)
-    - [23](project.sort.day) [December](project.sort.month_or_phrase) [2021](project.sort.year)
-    - [24](project.sort.day) [next month](project.sort.month_or_phrase) [2021](project.sort.year)
-    - [25](project.sort.day) [February](project.sort.month_or_phrase) [2022](project.sort.year)
-    - [26](project.sort.day) [September](project.sort.month_or_phrase) [2021](project.sort.year)
-    - [27](project.sort.day) [whenever](project.sort.month_or_phrase) [2021](project.sort.year)
-    - [28](project.sort.day) [October](project.sort.month_or_phrase) [2022](project.sort.year)
-    - [6](project.sort.day) [December](project.sort.month_or_phrase) [2021](project.sort.year)
-    - [8](project.sort.day) [January](project.sort.month_or_phrase) [2021](project.sort.year)
-    - [August](project.sort.month_or_phrase) [24](project.sort.day) [2021](project.sort.year)
-    - [January](project.sort.month_or_phrase) [28](project.sort.day) [2021](project.sort.year)
-    - [July](project.sort.month_or_phrase) [30](project.sort.day) [2022](project.sort.year)
-    - [June](project.sort.month_or_phrase) [5](project.sort.day) [2021](project.sort.year)
-    - [March](project.sort.month_or_phrase) [23](project.sort.day) [2022](project.sort.year)
-    - [May](project.sort.month_or_phrase) [3](project.sort.day) [2021](project.sort.year)
-    - [November](project.sort.month_or_phrase) [22](project.sort.day) [2021](project.sort.year)
-    - [September](project.sort.month_or_phrase) [28](project.sort.day) [2022](project.sort.year)
-    - [next month](project.sort.month_or_phrase) [21](project.sort.day) [2021](project.sort.year)
-    - [tomorrow](project.sort.month_or_phrase) [25](project.sort.day) [2022](project.sort.year)
-    - [10](project.sort.day) [May](project.sort.month_or_phrase)
-    - [14](project.sort.day) [July](project.sort.month_or_phrase)
-    - [15](project.sort.day) [July](project.sort.month_or_phrase)
-    - [19](project.sort.day) [December](project.sort.month_or_phrase)
-    - [20](project.sort.day) [October](project.sort.month_or_phrase)
-    - [28](project.sort.day) [July](project.sort.month_or_phrase)
-    - [2](project.sort.day) [April](project.sort.month_or_phrase)
-    - [30](project.sort.day) [June](project.sort.month_or_phrase)
-    - [7](project.sort.day) [next month](project.sort.month_or_phrase)
-    - [8](project.sort.day) [tomorrow](project.sort.month_or_phrase)
-    - [August](project.sort.month_or_phrase) [10](project.sort.day)
-    - [December](project.sort.month_or_phrase) [18](project.sort.day)
-    - [February](project.sort.month_or_phrase) [21](project.sort.day)
-    - [July](project.sort.month_or_phrase) [6](project.sort.day)
-    - [June](project.sort.month_or_phrase) [21](project.sort.day)
-    - [November](project.sort.month_or_phrase) [11](project.sort.day)
-    - [anytime](project.sort.month_or_phrase) [8](project.sort.day)
-    - [next month](project.sort.month_or_phrase) [16](project.sort.day)
-    - [tomorrow](project.sort.month_or_phrase) [16](project.sort.day)
-    - [whenever](project.sort.month_or_phrase) [2](project.sort.day)
-    - find a [both](project.sort.directness) flight from [Sparks]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Mokopane]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
-    - find a [direct flights](project.sort.directness) flight from [Battambang]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Ustroń]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
-    - find a [direct only](project.sort.directness) flight from [Bartlett]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Starachowice]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
-    - find a [direct](project.sort.directness) flight from [Xiaolingwei]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Vatican City]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
-    - find a [doesn't matter](project.sort.directness) flight from [Nungua]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Bunawan]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
-    - find a [non-direct flights](project.sort.directness) flight from [La Trinidad]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Astana]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
-    - find a [non-direct only](project.sort.directness) flight from [Kilmarnock]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Grand Junction]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
-    - find a [non-direct](project.sort.directness) flight from [Ontinyent]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Polatsk]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
-    - find a [only direct](project.sort.directness) flight from [Bad Münstereifel]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Ārt Khwājah]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
-    - find a [only non-direct](project.sort.directness) flight from [Bondy]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Potiskum]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
-    - find a flight from [Bogale]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Ryton]{"entity": "project.sort.city", "role": "project.predicate.city_to"} up to [253](project.sort.price)
-    - find a flight from [Galdakao]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Shawinigan]{"entity": "project.sort.city", "role": "project.predicate.city_to"} up to [601](project.sort.price)
-    - find a flight from [Grants Pass]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Leesburg]{"entity": "project.sort.city", "role": "project.predicate.city_to"} up to [238](project.sort.price)
-    - find a flight from [Kottagūdem]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Zuhres]{"entity": "project.sort.city", "role": "project.predicate.city_to"} up to [1880](project.sort.price)
-    - find a flight from [Kpalimé]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Esch-sur-Alzette]{"entity": "project.sort.city", "role": "project.predicate.city_to"} up to [1887](project.sort.price)
-    - find a flight from [Lafayette]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [San Miguel]{"entity": "project.sort.city", "role": "project.predicate.city_to"} up to [1558](project.sort.price)
-    - find a flight from [Masinloc]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Gobindpur]{"entity": "project.sort.city", "role": "project.predicate.city_to"} up to [1646](project.sort.price)
-    - find a flight from [Oradea]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Burutu]{"entity": "project.sort.city", "role": "project.predicate.city_to"} up to [1601](project.sort.price)
-    - find a flight from [Phultala]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Kitaibaraki]{"entity": "project.sort.city", "role": "project.predicate.city_to"} up to [597](project.sort.price)
-    - find a flight from [Saint Louis Park]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Umi]{"entity": "project.sort.city", "role": "project.predicate.city_to"} up to [1914](project.sort.price)
+    - [13](project.sort.day) [November](project.sort.month_or_phrase) [2022](project.sort.year)
+    - [15](project.sort.day) [next month](project.sort.month_or_phrase) [2021](project.sort.year)
+    - [17](project.sort.day) [May](project.sort.month_or_phrase) [2022](project.sort.year)
+    - [18](project.sort.day) [December](project.sort.month_or_phrase) [2021](project.sort.year)
+    - [24](project.sort.day) [February](project.sort.month_or_phrase) [2021](project.sort.year)
+    - [26](project.sort.day) [April](project.sort.month_or_phrase) [2022](project.sort.year)
+    - [28](project.sort.day) [July](project.sort.month_or_phrase) [2021](project.sort.year)
+    - [4](project.sort.day) [next month](project.sort.month_or_phrase) [2021](project.sort.year)
+    - [5](project.sort.day) [March](project.sort.month_or_phrase) [2021](project.sort.year)
+    - [6](project.sort.day) [February](project.sort.month_or_phrase) [2021](project.sort.year)
+    - [April](project.sort.month_or_phrase) [29](project.sort.day) [2022](project.sort.year)
+    - [August](project.sort.month_or_phrase) [9](project.sort.day) [2021](project.sort.year)
+    - [December](project.sort.month_or_phrase) [14](project.sort.day) [2022](project.sort.year)
+    - [January](project.sort.month_or_phrase) [29](project.sort.day) [2021](project.sort.year)
+    - [July](project.sort.month_or_phrase) [1](project.sort.day) [2021](project.sort.year)
+    - [May](project.sort.month_or_phrase) [7](project.sort.day) [2022](project.sort.year)
+    - [October](project.sort.month_or_phrase) [15](project.sort.day) [2022](project.sort.year)
+    - [September](project.sort.month_or_phrase) [15](project.sort.day) [2022](project.sort.year)
+    - [next month](project.sort.month_or_phrase) [7](project.sort.day) [2021](project.sort.year)
+    - [tomorrow](project.sort.month_or_phrase) [15](project.sort.day) [2022](project.sort.year)
+    - [11](project.sort.day) [September](project.sort.month_or_phrase)
+    - [15](project.sort.day) [May](project.sort.month_or_phrase)
+    - [17](project.sort.day) [December](project.sort.month_or_phrase)
+    - [19](project.sort.day) [January](project.sort.month_or_phrase)
+    - [1](project.sort.day) [May](project.sort.month_or_phrase)
+    - [22](project.sort.day) [January](project.sort.month_or_phrase)
+    - [23](project.sort.day) [December](project.sort.month_or_phrase)
+    - [3](project.sort.day) [September](project.sort.month_or_phrase)
+    - [4](project.sort.day) [June](project.sort.month_or_phrase)
+    - [7](project.sort.day) [July](project.sort.month_or_phrase)
+    - [April](project.sort.month_or_phrase) [25](project.sort.day)
+    - [December](project.sort.month_or_phrase) [9](project.sort.day)
+    - [February](project.sort.month_or_phrase) [7](project.sort.day)
+    - [July](project.sort.month_or_phrase) [27](project.sort.day)
+    - [June](project.sort.month_or_phrase) [10](project.sort.day)
+    - [November](project.sort.month_or_phrase) [10](project.sort.day)
+    - [October](project.sort.month_or_phrase) [9](project.sort.day)
+    - [anytime](project.sort.month_or_phrase) [9](project.sort.day)
+    - [tomorrow](project.sort.month_or_phrase) [28](project.sort.day)
+    - [whenever](project.sort.month_or_phrase) [1](project.sort.day)
+    - find a [all](project.sort.directness) flight from [Ormoc]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Sammamish]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
+    - find a [any](project.sort.directness) flight from [Fernandópolis]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Xiamen]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
+    - find a [both direct and non-direct](project.sort.directness) flight from [Kualakapuas]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Menzel Abderhaman]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
+    - find a [both](project.sort.directness) flight from [South Elmsall]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Brugge]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
+    - find a [direct](project.sort.directness) flight from [Chetumal]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Coatepec]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
+    - find a [doesn't matter](project.sort.directness) flight from [Jolo]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Laiwu]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
+    - find a [non-direct flights](project.sort.directness) flight from [Brigham City]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Magadan]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
+    - find a [non-direct only](project.sort.directness) flight from [Gyeongsan-si]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Majuro]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
+    - find a [non-direct](project.sort.directness) flight from [Ferraz de Vasconcelos]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Bokajān]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
+    - find a [only non-direct](project.sort.directness) flight from [Heihe]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Dana Point]{"entity": "project.sort.city", "role": "project.predicate.city_to"}
+    - find a flight from [Belleville]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Plant City]{"entity": "project.sort.city", "role": "project.predicate.city_to"} up to [1032](project.sort.price)
+    - find a flight from [Bridgewater]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Hindupur]{"entity": "project.sort.city", "role": "project.predicate.city_to"} up to [1871](project.sort.price)
+    - find a flight from [Chengam]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Weybridge]{"entity": "project.sort.city", "role": "project.predicate.city_to"} up to [1109](project.sort.price)
+    - find a flight from [Khamaria]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Cambridge]{"entity": "project.sort.city", "role": "project.predicate.city_to"} up to [628](project.sort.price)
+    - find a flight from [Kęty]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Gokak]{"entity": "project.sort.city", "role": "project.predicate.city_to"} up to [111](project.sort.price)
+    - find a flight from [Podgorica]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Samrāla]{"entity": "project.sort.city", "role": "project.predicate.city_to"} up to [1376](project.sort.price)
+    - find a flight from [Sandıklı]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Merouana]{"entity": "project.sort.city", "role": "project.predicate.city_to"} up to [1324](project.sort.price)
+    - find a flight from [Sari]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Klungkung]{"entity": "project.sort.city", "role": "project.predicate.city_to"} up to [405](project.sort.price)
+    - find a flight from [Shadrinsk]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Portici]{"entity": "project.sort.city", "role": "project.predicate.city_to"} up to [454](project.sort.price)
+    - find a flight from [Tandaltī]{"entity": "project.sort.city", "role": "project.predicate.city_from"} to [Olpe]{"entity": "project.sort.city", "role": "project.predicate.city_to"} up to [557](project.sort.price)
 
 - intent: project:question::flights_filtered
   examples: |
     - narrow down searches
     - filter searches
+    - narrow searches
+    - narrow the searches
     - find something cheaper
     - find cheaper ones
+    - I want something cheaper
+    - find [all](project.sort.directness) flights
+    - find [any](project.sort.directness) flights
+    - find [both direct and non-direct](project.sort.directness) flights
     - find [both](project.sort.directness) flights
-    - find [direct flights](project.sort.directness) flights
-    - find [direct only](project.sort.directness) flights
     - find [direct](project.sort.directness) flights
     - find [doesn't matter](project.sort.directness) flights
     - find [non-direct flights](project.sort.directness) flights
     - find [non-direct only](project.sort.directness) flights
     - find [non-direct](project.sort.directness) flights
-    - find [only direct](project.sort.directness) flights
     - find [only non-direct](project.sort.directness) flights
-    - find flights up to [1119](project.sort.price)
-    - find flights up to [1141](project.sort.price)
-    - find flights up to [1538](project.sort.price)
-    - find flights up to [1930](project.sort.price)
-    - find flights up to [410](project.sort.price)
-    - find flights up to [584](project.sort.price)
-    - find flights up to [811](project.sort.price)
-    - find flights up to [836](project.sort.price)
-    - find flights up to [874](project.sort.price)
-    - find flights up to [909](project.sort.price)
-    - set maximum price to [1195](project.sort.price)
-    - set maximum price to [123](project.sort.price)
-    - set maximum price to [1367](project.sort.price)
-    - set maximum price to [1418](project.sort.price)
-    - set maximum price to [181](project.sort.price)
-    - set maximum price to [1962](project.sort.price)
-    - set maximum price to [230](project.sort.price)
-    - set maximum price to [485](project.sort.price)
-    - set maximum price to [653](project.sort.price)
-    - set maximum price to [984](project.sort.price)
-    - find [all](project.sort.directness) flights up to [432](project.sort.price)
-    - find [any](project.sort.directness) flights up to [1434](project.sort.price)
-    - find [both direct and non-direct](project.sort.directness) flights up to [225](project.sort.price)
-    - find [both](project.sort.directness) flights up to [1942](project.sort.price)
-    - find [direct](project.sort.directness) flights up to [1918](project.sort.price)
-    - find [doesn't matter](project.sort.directness) flights up to [380](project.sort.price)
-    - find [non-direct flights](project.sort.directness) flights up to [370](project.sort.price)
-    - find [non-direct only](project.sort.directness) flights up to [278](project.sort.price)
-    - find [non-direct](project.sort.directness) flights up to [1312](project.sort.price)
-    - find [only non-direct](project.sort.directness) flights up to [1379](project.sort.price)
+    - I want [all](project.sort.directness) flights
+    - I want [any](project.sort.directness) flights
+    - I want [both direct and non-direct](project.sort.directness) flights
+    - I want [both](project.sort.directness) flights
+    - I want [direct flights](project.sort.directness) flights
+    - I want [direct only](project.sort.directness) flights
+    - I want [direct](project.sort.directness) flights
+    - I want [doesn't matter](project.sort.directness) flights
+    - I want [non-direct](project.sort.directness) flights
+    - I want [only direct](project.sort.directness) flights
+    - find flights up to [1038](project.sort.price)
+    - find flights up to [1284](project.sort.price)
+    - find flights up to [1554](project.sort.price)
+    - find flights up to [1579](project.sort.price)
+    - find flights up to [1633](project.sort.price)
+    - find flights up to [1680](project.sort.price)
+    - find flights up to [1730](project.sort.price)
+    - find flights up to [1791](project.sort.price)
+    - find flights up to [1833](project.sort.price)
+    - find flights up to [1924](project.sort.price)
+    - set the maximum price to [1026](project.sort.price)
+    - set the maximum price to [1148](project.sort.price)
+    - set the maximum price to [1196](project.sort.price)
+    - set the maximum price to [1228](project.sort.price)
+    - set the maximum price to [124](project.sort.price)
+    - set the maximum price to [1510](project.sort.price)
+    - set the maximum price to [1706](project.sort.price)
+    - set the maximum price to [484](project.sort.price)
+    - set the maximum price to [530](project.sort.price)
+    - set the maximum price to [853](project.sort.price)
+    - set maximum price to [1288](project.sort.price)
+    - set maximum price to [1315](project.sort.price)
+    - set maximum price to [1356](project.sort.price)
+    - set maximum price to [1448](project.sort.price)
+    - set maximum price to [1769](project.sort.price)
+    - set maximum price to [1845](project.sort.price)
+    - set maximum price to [1926](project.sort.price)
+    - set maximum price to [465](project.sort.price)
+    - set maximum price to [578](project.sort.price)
+    - set maximum price to [626](project.sort.price)
+    - find [both](project.sort.directness) flights up to [1628](project.sort.price)
+    - find [direct flights](project.sort.directness) flights up to [1235](project.sort.price)
+    - find [direct only](project.sort.directness) flights up to [1983](project.sort.price)
+    - find [direct](project.sort.directness) flights up to [1957](project.sort.price)
+    - find [doesn't matter](project.sort.directness) flights up to [8](project.sort.price)
+    - find [non-direct flights](project.sort.directness) flights up to [1639](project.sort.price)
+    - find [non-direct only](project.sort.directness) flights up to [807](project.sort.price)
+    - find [non-direct](project.sort.directness) flights up to [1543](project.sort.price)
+    - find [only direct](project.sort.directness) flights up to [527](project.sort.price)
+    - find [only non-direct](project.sort.directness) flights up to [317](project.sort.price)
 
 - intent: project:question::covid_info
   examples: |
     - tell me about travel restrictions
     - travel restrictions
     - travel information
-    - travel restrictions in [Barrancas](project.sort.city)
-    - travel restrictions in [Cimahi](project.sort.city)
-    - travel restrictions in [Fougères](project.sort.city)
-    - travel restrictions in [Neyyāttinkara](project.sort.city)
-    - travel restrictions in [Prince Albert](project.sort.city)
-    - travel restrictions in [Riverside](project.sort.city)
-    - travel restrictions in [Schrobenhausen](project.sort.city)
-    - travel restrictions in [Sirāhā](project.sort.city)
-    - travel restrictions in [Tapah Road](project.sort.city)
-    - travel restrictions in [Weirton](project.sort.city)
-    - travel information in [Anoka](project.sort.city)
-    - travel information in [Banbridge](project.sort.city)
-    - travel information in [Gwadar](project.sort.city)
-    - travel information in [Kusa](project.sort.city)
-    - travel information in [Moose Jaw](project.sort.city)
-    - travel information in [Mountlake Terrace](project.sort.city)
-    - travel information in [Nanjangūd](project.sort.city)
-    - travel information in [Soignies](project.sort.city)
-    - travel information in [Votkinsk](project.sort.city)
-    - travel information in [Zapotiltic](project.sort.city)
-    - what's the travel information in [Andong](project.sort.city)
-    - what's the travel information in [Châtelet](project.sort.city)
-    - what's the travel information in [Jablonec nad Nisou](project.sort.city)
-    - what's the travel information in [Jiaozuo](project.sort.city)
-    - what's the travel information in [Kalamnūri](project.sort.city)
-    - what's the travel information in [Kashin](project.sort.city)
-    - what's the travel information in [León](project.sort.city)
-    - what's the travel information in [Opelika](project.sort.city)
-    - what's the travel information in [Parit Raja](project.sort.city)
-    - what's the travel information in [Tyrnyauz](project.sort.city)
-    - what are the travel restrictions in [Alfreton](project.sort.city)
-    - what are the travel restrictions in [Bratislava](project.sort.city)
-    - what are the travel restrictions in [Kivertsi](project.sort.city)
-    - what are the travel restrictions in [Mīrānpur](project.sort.city)
-    - what are the travel restrictions in [Rutigliano](project.sort.city)
-    - what are the travel restrictions in [Saint-Maximin-la-Sainte-Baume](project.sort.city)
-    - what are the travel restrictions in [Semīrom](project.sort.city)
-    - what are the travel restrictions in [Ush-Tyube](project.sort.city)
-    - what are the travel restrictions in [Yumbe](project.sort.city)
-    - what are the travel restrictions in [Zapotlanejo](project.sort.city)
-    - [entry information](project.sort.info) in [Sāvantvādi](project.sort.city)
-    - [entry requirement](project.sort.info) in [Ambāla](project.sort.city)
-    - [entry requirements](project.sort.info) in [Sinjhoro](project.sort.city)
-    - [entry restriction](project.sort.info) in [Khed Brahma](project.sort.city)
-    - [entry restrictions](project.sort.info) in [Nueva Loja](project.sort.city)
-    - [quarantine requirement](project.sort.info) in [Warangal](project.sort.city)
-    - [quarantine requirements](project.sort.info) in [Svetlanovskiy](project.sort.city)
-    - [testing information](project.sort.info) in [Baytown](project.sort.city)
-    - [testing requirement](project.sort.info) in [Hialeah](project.sort.city)
-    - [testing requirements](project.sort.info) in [Vanløse](project.sort.city)
-    - tell me about [entry information](project.sort.info) in [Brierley Hill](project.sort.city)
-    - tell me about [entry requirement](project.sort.info) in [Campo Grande](project.sort.city)
-    - tell me about [entry requirements](project.sort.info) in [Shali](project.sort.city)
-    - tell me about [entry restriction](project.sort.info) in [Salcedo](project.sort.city)
-    - tell me about [entry restrictions](project.sort.info) in [Tübingen](project.sort.city)
-    - tell me about [quarantine requirement](project.sort.info) in [Lomita](project.sort.city)
-    - tell me about [quarantine requirements](project.sort.info) in [Hashtrūd](project.sort.city)
-    - tell me about [testing information](project.sort.info) in [Rueil-Malmaison](project.sort.city)
-    - tell me about [testing requirement](project.sort.info) in [Taraz](project.sort.city)
-    - tell me about [testing requirements](project.sort.info) in [Plaridel](project.sort.city)
-    - is there [entry information](project.sort.info) in [Tarub](project.sort.city)
-    - is there [entry requirement](project.sort.info) in [Hashtpar](project.sort.city)
-    - is there [entry requirements](project.sort.info) in [Raipur](project.sort.city)
-    - is there [entry restrictions](project.sort.info) in [Habiganj](project.sort.city)
-    - is there [quarantine information](project.sort.info) in [Serchhīp](project.sort.city)
-    - is there [quarantine requirement](project.sort.info) in [Pleiku](project.sort.city)
-    - is there [quarantine requirements](project.sort.info) in [Uttaradit](project.sort.city)
-    - is there [testing information](project.sort.info) in [Krujë](project.sort.city)
-    - is there [testing requirement](project.sort.info) in [Pelhřimov](project.sort.city)
-    - is there [testing requirements](project.sort.info) in [Sirājganj](project.sort.city)
-    - are there [entry information](project.sort.info) in [Liloan](project.sort.city)
-    - are there [entry requirement](project.sort.info) in [Mansfield Woodhouse](project.sort.city)
-    - are there [entry requirements](project.sort.info) in [Balwyn North](project.sort.city)
-    - are there [entry restrictions](project.sort.info) in [Isparta](project.sort.city)
-    - are there [quarantine information](project.sort.info) in [Três Lagoas](project.sort.city)
-    - are there [quarantine requirement](project.sort.info) in [Bouaflé](project.sort.city)
-    - are there [quarantine requirements](project.sort.info) in [Valparaíso](project.sort.city)
-    - are there [testing information](project.sort.info) in [Dania Beach](project.sort.city)
-    - are there [testing requirement](project.sort.info) in [Kachkanar](project.sort.city)
-    - are there [testing requirements](project.sort.info) in [Salonta](project.sort.city)
-    - what's the [entry information](project.sort.info) in [Lučenec](project.sort.city)
-    - what's the [entry requirement](project.sort.info) in [Pagaluñgan](project.sort.city)
-    - what's the [entry requirements](project.sort.info) in [Zürich (Kreis 7)](project.sort.city)
-    - what's the [entry restriction](project.sort.info) in [East New York](project.sort.city)
-    - what's the [entry restrictions](project.sort.info) in [Curtea de Argeş](project.sort.city)
-    - what's the [quarantine information](project.sort.info) in [Karlshamn](project.sort.city)
-    - what's the [quarantine requirement](project.sort.info) in [Parabiago](project.sort.city)
-    - what's the [quarantine requirements](project.sort.info) in [Lingdong](project.sort.city)
-    - what's the [testing requirement](project.sort.info) in [Oldenzaal](project.sort.city)
-    - what's the [testing requirements](project.sort.info) in [Ban Huai Thalaeng](project.sort.city)
-    - what are the [entry information](project.sort.info) in [Baotou](project.sort.city)
-    - what are the [entry requirement](project.sort.info) in [Paseh](project.sort.city)
-    - what are the [entry requirements](project.sort.info) in [Ārani](project.sort.city)
-    - what are the [entry restriction](project.sort.info) in [Simpang Empat](project.sort.city)
-    - what are the [entry restrictions](project.sort.info) in [Maicao](project.sort.city)
-    - what are the [quarantine information](project.sort.info) in [Kichha](project.sort.city)
-    - what are the [quarantine requirement](project.sort.info) in [Igbor](project.sort.city)
-    - what are the [quarantine requirements](project.sort.info) in [Zheleznovodsk](project.sort.city)
-    - what are the [testing requirement](project.sort.info) in [Howick](project.sort.city)
-    - what are the [testing requirements](project.sort.info) in [Ryazan’](project.sort.city)
+    - travel restrictions in [Ambarawa](project.sort.city)
+    - travel restrictions in [Damara](project.sort.city)
+    - travel restrictions in [Glória do Goitá](project.sort.city)
+    - travel restrictions in [Naic](project.sort.city)
+    - travel restrictions in [Ptolemaḯda](project.sort.city)
+    - travel restrictions in [Sariaya](project.sort.city)
+    - travel restrictions in [Sollentuna](project.sort.city)
+    - travel restrictions in [Suzaka](project.sort.city)
+    - travel restrictions in [Venustiano Carranza](project.sort.city)
+    - travel restrictions in [Woking](project.sort.city)
+    - are there travel restrictions in [Alexandria](project.sort.city)
+    - are there travel restrictions in [Dukuhturi](project.sort.city)
+    - are there travel restrictions in [Dīglūr](project.sort.city)
+    - are there travel restrictions in [East Lake-Orient Park](project.sort.city)
+    - are there travel restrictions in [Fruit Cove](project.sort.city)
+    - are there travel restrictions in [Kapit](project.sort.city)
+    - are there travel restrictions in [Resistencia](project.sort.city)
+    - are there travel restrictions in [Sanandaj](project.sort.city)
+    - are there travel restrictions in [Sirsa](project.sort.city)
+    - are there travel restrictions in [Sohāgpur](project.sort.city)
+    - is there any restrictions in [Aleksandrov](project.sort.city)
+    - is there any restrictions in [Alexandria](project.sort.city)
+    - is there any restrictions in [Fort Gloster](project.sort.city)
+    - is there any restrictions in [Itaocara](project.sort.city)
+    - is there any restrictions in [Middletown](project.sort.city)
+    - is there any restrictions in [Monoharpur](project.sort.city)
+    - is there any restrictions in [Saarlouis](project.sort.city)
+    - is there any restrictions in [Springfield](project.sort.city)
+    - is there any restrictions in [Yarīm](project.sort.city)
+    - is there any restrictions in [Zaria](project.sort.city)
+    - are there any restrictions in [Broken Arrow](project.sort.city)
+    - are there any restrictions in [Civitavecchia](project.sort.city)
+    - are there any restrictions in [Dubbo](project.sort.city)
+    - are there any restrictions in [Mudkhed](project.sort.city)
+    - are there any restrictions in [Niihama](project.sort.city)
+    - are there any restrictions in [Rubidoux](project.sort.city)
+    - are there any restrictions in [San Francisco](project.sort.city)
+    - are there any restrictions in [Shājāpur](project.sort.city)
+    - are there any restrictions in [Suzhou](project.sort.city)
+    - are there any restrictions in [Udumalaippettai](project.sort.city)
+    - travel information in [Douera](project.sort.city)
+    - travel information in [Emmiganūr](project.sort.city)
+    - travel information in [Gherla](project.sort.city)
+    - travel information in [Kommunar](project.sort.city)
+    - travel information in [Kozáni](project.sort.city)
+    - travel information in [Leposaviq](project.sort.city)
+    - travel information in [Lālganj](project.sort.city)
+    - travel information in [Machachi](project.sort.city)
+    - travel information in [Parsippany](project.sort.city)
+    - travel information in [Subang Jaya](project.sort.city)
+    - what's the travel information in [Afikpo](project.sort.city)
+    - what's the travel information in [Aguadulce](project.sort.city)
+    - what's the travel information in [Bellary](project.sort.city)
+    - what's the travel information in [Catacaos](project.sort.city)
+    - what's the travel information in [Dayr al Balaḩ](project.sort.city)
+    - what's the travel information in [La Orotava](project.sort.city)
+    - what's the travel information in [Mahobā](project.sort.city)
+    - what's the travel information in [Serchhīp](project.sort.city)
+    - what's the travel information in [Shikārpur](project.sort.city)
+    - what's the travel information in [Tabira](project.sort.city)
+    - what are the travel restrictions in [Achinsk](project.sort.city)
+    - what are the travel restrictions in [Catamayo](project.sort.city)
+    - what are the travel restrictions in [Gongchangling](project.sort.city)
+    - what are the travel restrictions in [Guará](project.sort.city)
+    - what are the travel restrictions in [Jekulo](project.sort.city)
+    - what are the travel restrictions in [Kamal](project.sort.city)
+    - what are the travel restrictions in [Klagenfurt am Wörthersee](project.sort.city)
+    - what are the travel restrictions in [Nazareth](project.sort.city)
+    - what are the travel restrictions in [Nīmbāhera](project.sort.city)
+    - what are the travel restrictions in [Ząbkowice Śląskie](project.sort.city)
+    - [covid test](project.sort.info) in [Tczew](project.sort.city)
+    - [entry information](project.sort.info) in [Yafran](project.sort.city)
+    - [entry requirement](project.sort.info) in [Lydenburg](project.sort.city)
+    - [entry requirements](project.sort.info) in [Naushahra Virkān](project.sort.city)
+    - [entry restriction](project.sort.info) in [Kibakwe](project.sort.city)
+    - [entry restrictions](project.sort.info) in [Tādif](project.sort.city)
+    - [testing information](project.sort.info) in [Teruel](project.sort.city)
+    - [testing requirement](project.sort.info) in [Samfya](project.sort.city)
+    - [testing requirements](project.sort.info) in [Shahr Sultān](project.sort.city)
+    - [testing](project.sort.info) in [Seelze](project.sort.city)
+    - tell me about [covid test](project.sort.info) in [Yashan](project.sort.city)
+    - tell me about [entry requirements](project.sort.info) in [Thayetmyo](project.sort.city)
+    - tell me about [quarantine information](project.sort.info) in [Schmallenberg](project.sort.city)
+    - tell me about [quarantine requirement](project.sort.info) in [Yamaguchi](project.sort.city)
+    - tell me about [quarantine requirements](project.sort.info) in [Angat](project.sort.city)
+    - tell me about [quarantine](project.sort.info) in [Sil-li](project.sort.city)
+    - tell me about [testing information](project.sort.info) in [Cannanore](project.sort.city)
+    - tell me about [testing requirement](project.sort.info) in [George Town](project.sort.city)
+    - tell me about [testing requirements](project.sort.info) in [San Lazzaro](project.sort.city)
+    - tell me about [testing](project.sort.info) in [Carlsbad](project.sort.city)
+    - is there [covid test](project.sort.info) in [Mairiporã](project.sort.city)
+    - is there [entry requirements](project.sort.info) in [Kanazawa](project.sort.city)
+    - is there [quarantine information](project.sort.info) in [Ciudad Serdán](project.sort.city)
+    - is there [quarantine requirement](project.sort.info) in [Ryōtsu-minato](project.sort.city)
+    - is there [quarantine requirements](project.sort.info) in [Agropoli](project.sort.city)
+    - is there [quarantine](project.sort.info) in [Codó](project.sort.city)
+    - is there [testing information](project.sort.info) in [Kitale](project.sort.city)
+    - is there [testing requirement](project.sort.info) in [Davao](project.sort.city)
+    - is there [testing requirements](project.sort.info) in [Michelstadt](project.sort.city)
+    - is there [testing](project.sort.info) in [Irvine](project.sort.city)
+    - are there [covid test](project.sort.info) in [Amarpātan](project.sort.city)
+    - are there [entry requirements](project.sort.info) in [Salt Lake City](project.sort.city)
+    - are there [quarantine information](project.sort.info) in [Brahmapur](project.sort.city)
+    - are there [quarantine requirement](project.sort.info) in [Frankenberg](project.sort.city)
+    - are there [quarantine requirements](project.sort.info) in [Gao](project.sort.city)
+    - are there [quarantine](project.sort.info) in [Naze](project.sort.city)
+    - are there [testing information](project.sort.info) in [Zaporizhzhya](project.sort.city)
+    - are there [testing requirement](project.sort.info) in [Chandauli](project.sort.city)
+    - are there [testing requirements](project.sort.info) in [Ken Caryl](project.sort.city)
+    - are there [testing](project.sort.info) in [Kāndla](project.sort.city)
+    - what's the [entry information](project.sort.info) in [Gillette](project.sort.city)
+    - what's the [entry requirement](project.sort.info) in [Sillamäe](project.sort.city)
+    - what's the [entry requirements](project.sort.info) in [Bānsbāria](project.sort.city)
+    - what's the [entry restriction](project.sort.info) in [Osterholz-Scharmbeck](project.sort.city)
+    - what's the [entry restrictions](project.sort.info) in [Shirbīn](project.sort.city)
+    - what's the [quarantine information](project.sort.info) in [Goiânia](project.sort.city)
+    - what's the [quarantine requirement](project.sort.info) in [Chincha Alta](project.sort.city)
+    - what's the [quarantine requirements](project.sort.info) in [Charleston](project.sort.city)
+    - what's the [quarantine](project.sort.info) in [Smithtown](project.sort.city)
+    - what's the [testing requirements](project.sort.info) in [La Paz](project.sort.city)
+    - what are the [entry information](project.sort.info) in [Favara](project.sort.city)
+    - what are the [entry requirement](project.sort.info) in [Al Quţayfah](project.sort.city)
+    - what are the [entry requirements](project.sort.info) in [Zarand](project.sort.city)
+    - what are the [entry restriction](project.sort.info) in [Lopez](project.sort.city)
+    - what are the [entry restrictions](project.sort.info) in [Bloomington](project.sort.city)
+    - what are the [quarantine information](project.sort.info) in [Anaimalai](project.sort.city)
+    - what are the [quarantine requirement](project.sort.info) in [Kanggye-si](project.sort.city)
+    - what are the [quarantine requirements](project.sort.info) in [Kant](project.sort.city)
+    - what are the [quarantine](project.sort.info) in [Jardim](project.sort.city)
+    - what are the [testing requirements](project.sort.info) in [Kežmarok](project.sort.city)
     - tell me about the [entry information](project.sort.info)
     - tell me about the [entry requirement](project.sort.info)
     - tell me about the [entry requirements](project.sort.info)
+    - tell me about the [entry restriction](project.sort.info)
     - tell me about the [entry restrictions](project.sort.info)
     - tell me about the [quarantine information](project.sort.info)
     - tell me about the [quarantine requirement](project.sort.info)
     - tell me about the [quarantine requirements](project.sort.info)
-    - tell me about the [testing information](project.sort.info)
-    - tell me about the [testing requirement](project.sort.info)
+    - tell me about the [quarantine](project.sort.info)
     - tell me about the [testing requirements](project.sort.info)
     - what's the [entry information](project.sort.info)
     - what's the [entry requirement](project.sort.info)
     - what's the [entry requirements](project.sort.info)
+    - what's the [entry restriction](project.sort.info)
     - what's the [entry restrictions](project.sort.info)
     - what's the [quarantine information](project.sort.info)
     - what's the [quarantine requirement](project.sort.info)
     - what's the [quarantine requirements](project.sort.info)
-    - what's the [testing information](project.sort.info)
-    - what's the [testing requirement](project.sort.info)
+    - what's the [quarantine](project.sort.info)
     - what's the [testing requirements](project.sort.info)
+    - what are the [covid test](project.sort.info)
     - what are the [entry information](project.sort.info)
     - what are the [entry requirement](project.sort.info)
     - what are the [entry requirements](project.sort.info)
     - what are the [entry restriction](project.sort.info)
     - what are the [entry restrictions](project.sort.info)
-    - what are the [quarantine information](project.sort.info)
-    - what are the [quarantine requirement](project.sort.info)
-    - what are the [quarantine requirements](project.sort.info)
+    - what are the [testing information](project.sort.info)
     - what are the [testing requirement](project.sort.info)
     - what are the [testing requirements](project.sort.info)
+    - what are the [testing](project.sort.info)
 
 - intent: project:answer
   examples: |
-    - [Calhoun](project.sort.city)
-    - [Corigliano Scalo](project.sort.city)
-    - [Sayreville](project.sort.city)
-    - [Cabo San Lucas](project.sort.city)
-    - [Osijek](project.sort.city)
-    - [San Andrés Itzapa](project.sort.city)
-    - [Kulmbach](project.sort.city)
-    - [Votuporanga](project.sort.city)
-    - [Barnstaple](project.sort.city)
-    - [Pineda de Mar](project.sort.city)
+    - [Kuraymah](project.sort.city)
+    - [Ejido](project.sort.city)
+    - [Crato](project.sort.city)
+    - [Anicuns](project.sort.city)
+    - [Beloretsk](project.sort.city)
+    - [Rumoi](project.sort.city)
+    - [Aue](project.sort.city)
+    - [Seelze](project.sort.city)
+    - [Oudenaarde](project.sort.city)
+    - [London](project.sort.city)
     - [single](project.sort.string)
     - [double word](project.sort.string)
     - [three in one](project.sort.string)
@@ -481,16 +534,35 @@ nlu:
     - [noone counts toes like an eight toed guy](project.sort.string)
     - [it matters to make sense for nine of us](project.sort.string)
     - [would you bring ten or none to a desert island](project.sort.string)
-    - [BAM](project.sort.currency)
-    - [HRK](project.sort.currency)
-    - [Somoni](project.sort.currency)
-    - [Lek](project.sort.currency)
-    - [PHP](project.sort.currency)
-    - [Tenge](project.sort.currency)
-    - [HKD](project.sort.currency)
-    - [QAR](project.sort.currency)
-    - [LAK](project.sort.currency)
-    - [Turkish Lira](project.sort.currency)
+    - [Euros](project.sort.currency)
+    - [Euro](project.sort.currency)
+    - [Swedish crowns](project.sort.currency)
+    - [Swedish crown](project.sort.currency)
+    - [Swedish Krona](project.sort.currency)
+    - [American Dollars](project.sort.currency)
+    - [U.S. Dollars](project.sort.currency)
+    - [U.S. Dollar](project.sort.currency)
+    - [US Dollar](project.sort.currency)
+    - [Taiwanese dollars](project.sort.currency)
+    - [Taiwan dollars](project.sort.currency)
+    - [New Taiwan Dollar](project.sort.currency)
+    - [Yen](project.sort.currency)
+    - [Japanese Yen](project.sort.currency)
+    - [South Korean Won](project.sort.currency)
+    - [Won](project.sort.currency)
+    - [Korean Won](project.sort.currency)
+    - [British pounds](project.sort.currency)
+    - [Pounds](project.sort.currency)
+    - [Great Britain Pound](project.sort.currency)
+    - [Hong Kong Dollars](project.sort.currency)
+    - [HK dollar](project.sort.currency)
+    - [Hong Kong Dollar](project.sort.currency)
+    - [Aussie bucks](project.sort.currency)
+    - [Aussie dollars](project.sort.currency)
+    - [Australian Dollar](project.sort.currency)
+    - [Singapore dollars](project.sort.currency)
+    - [Singporean dollar](project.sort.currency)
+    - [Singapore Dollar](project.sort.currency)
     - [1](project.sort.day)
     - [2](project.sort.day)
     - [3](project.sort.day)
@@ -543,19 +615,22 @@ nlu:
     - [quarantine requirements](project.sort.info)
     - [quarantine requirement](project.sort.info)
     - [quarantine information](project.sort.info)
+    - [quarantine](project.sort.info)
     - [testing requirements](project.sort.info)
     - [testing requirement](project.sort.info)
     - [testing information](project.sort.info)
-    - [1207](project.sort.price)
-    - [1529](project.sort.price)
-    - [1146](project.sort.price)
-    - [1027](project.sort.price)
-    - [1557](project.sort.price)
-    - [930](project.sort.price)
-    - [781](project.sort.price)
-    - [1384](project.sort.price)
-    - [1551](project.sort.price)
-    - [698](project.sort.price)
+    - [testing](project.sort.info)
+    - [covid test](project.sort.info)
+    - [885](project.sort.price)
+    - [1444](project.sort.price)
+    - [869](project.sort.price)
+    - [211](project.sort.price)
+    - [690](project.sort.price)
+    - [1687](project.sort.price)
+    - [1502](project.sort.price)
+    - [1131](project.sort.price)
+    - [1874](project.sort.price)
+    - [1021](project.sort.price)
     - [whenever](project.sort.month_or_phrase)
     - [anytime](project.sort.month_or_phrase)
     - [tomorrow](project.sort.month_or_phrase)
@@ -574,53 +649,76 @@ nlu:
     - [December](project.sort.month_or_phrase)
     - [2021](project.sort.year)
     - [2022](project.sort.year)
-    - yes [Calhoun](project.sort.city)
+    - yes [Kuraymah](project.sort.city)
     - yes [single](project.sort.string)
-    - yes [BAM](project.sort.currency)
-    - yes [1](project.sort.day)
-    - yes [11](project.sort.day)
-    - yes [21](project.sort.day)
-    - yes [31](project.sort.day)
-    - yes [doesn't matter](project.sort.directness)
-    - yes [quarantine requirement](project.sort.info)
-    - yes [930](project.sort.price)
-    - yes [February](project.sort.month_or_phrase)
-    - yes [December](project.sort.month_or_phrase)
-    - no [Corigliano Scalo](project.sort.city)
+    - yes [Euros](project.sort.currency)
+    - yes [Taiwan dollars](project.sort.currency)
+    - yes [Hong Kong Dollars](project.sort.currency)
+    - yes [2](project.sort.day)
+    - yes [12](project.sort.day)
+    - yes [22](project.sort.day)
+    - yes [direct](project.sort.directness)
+    - yes [both direct and non-direct](project.sort.directness)
+    - yes [quarantine information](project.sort.info)
+    - yes [211](project.sort.price)
+    - yes [next month](project.sort.month_or_phrase)
+    - yes [October](project.sort.month_or_phrase)
+    - no [Ejido](project.sort.city)
     - no [double word](project.sort.string)
-    - no [HRK](project.sort.currency)
-    - no [2](project.sort.day)
-    - no [12](project.sort.day)
-    - no [22](project.sort.day)
-    - no [direct](project.sort.directness)
-    - no [both direct and non-direct](project.sort.directness)
-    - no [quarantine information](project.sort.info)
-    - no [781](project.sort.price)
-    - no [March](project.sort.month_or_phrase)
-    - no [2021](project.sort.year)
+    - no [Euro](project.sort.currency)
+    - no [New Taiwan Dollar](project.sort.currency)
+    - no [HK dollar](project.sort.currency)
+    - no [3](project.sort.day)
+    - no [13](project.sort.day)
+    - no [23](project.sort.day)
+    - no [only direct](project.sort.directness)
+    - no [any](project.sort.directness)
+    - no [quarantine](project.sort.info)
+    - no [690](project.sort.price)
+    - no [January](project.sort.month_or_phrase)
+    - no [November](project.sort.month_or_phrase)
 
 - intent: project:answer_negation
   examples: |
-    - not [Subang Jaya](project.sort.city)
-    - not [Bečej](project.sort.city)
-    - not [Placentia](project.sort.city)
-    - not [Al Ḩāmūl](project.sort.city)
-    - not [Kalocsa](project.sort.city)
-    - not [Bulan](project.sort.city)
-    - not [Metro](project.sort.city)
-    - not [Lautaro](project.sort.city)
-    - not [Cogan](project.sort.city)
-    - not [Giyani](project.sort.city)
-    - not [THB](project.sort.currency)
-    - not [CLP](project.sort.currency)
-    - not [East Caribbean Dollar](project.sort.currency)
-    - not [Canadian Dollar](project.sort.currency)
-    - not [Ngultrum](project.sort.currency)
-    - not [Lari](project.sort.currency)
-    - not [CUP](project.sort.currency)
-    - not [EUR](project.sort.currency)
-    - not [MWK](project.sort.currency)
-    - not [GYD](project.sort.currency)
+    - not [Blaine](project.sort.city)
+    - not [Driyorejo](project.sort.city)
+    - not [Vesoul](project.sort.city)
+    - not [São Bernardo do Campo](project.sort.city)
+    - not [Paysandú](project.sort.city)
+    - not [Dehdasht](project.sort.city)
+    - not [Zürich (Kreis 9)](project.sort.city)
+    - not [Włocławek](project.sort.city)
+    - not [Lörrach](project.sort.city)
+    - not [Garoowe](project.sort.city)
+    - not [Euros](project.sort.currency)
+    - not [Euro](project.sort.currency)
+    - not [Swedish crowns](project.sort.currency)
+    - not [Swedish crown](project.sort.currency)
+    - not [Swedish Krona](project.sort.currency)
+    - not [American Dollars](project.sort.currency)
+    - not [U.S. Dollars](project.sort.currency)
+    - not [U.S. Dollar](project.sort.currency)
+    - not [US Dollar](project.sort.currency)
+    - not [Taiwanese dollars](project.sort.currency)
+    - not [Taiwan dollars](project.sort.currency)
+    - not [New Taiwan Dollar](project.sort.currency)
+    - not [Yen](project.sort.currency)
+    - not [Japanese Yen](project.sort.currency)
+    - not [South Korean Won](project.sort.currency)
+    - not [Won](project.sort.currency)
+    - not [Korean Won](project.sort.currency)
+    - not [British pounds](project.sort.currency)
+    - not [Pounds](project.sort.currency)
+    - not [Great Britain Pound](project.sort.currency)
+    - not [Hong Kong Dollars](project.sort.currency)
+    - not [HK dollar](project.sort.currency)
+    - not [Hong Kong Dollar](project.sort.currency)
+    - not [Aussie bucks](project.sort.currency)
+    - not [Aussie dollars](project.sort.currency)
+    - not [Australian Dollar](project.sort.currency)
+    - not [Singapore dollars](project.sort.currency)
+    - not [Singporean dollar](project.sort.currency)
+    - not [Singapore Dollar](project.sort.currency)
     - not [1](project.sort.day)
     - not [2](project.sort.day)
     - not [3](project.sort.day)
@@ -673,19 +771,22 @@ nlu:
     - not [quarantine requirements](project.sort.info)
     - not [quarantine requirement](project.sort.info)
     - not [quarantine information](project.sort.info)
+    - not [quarantine](project.sort.info)
     - not [testing requirements](project.sort.info)
     - not [testing requirement](project.sort.info)
     - not [testing information](project.sort.info)
-    - not [1080](project.sort.price)
-    - not [147](project.sort.price)
-    - not [962](project.sort.price)
-    - not [1706](project.sort.price)
-    - not [1882](project.sort.price)
-    - not [1217](project.sort.price)
-    - not [1240](project.sort.price)
-    - not [1514](project.sort.price)
-    - not [374](project.sort.price)
-    - not [1502](project.sort.price)
+    - not [testing](project.sort.info)
+    - not [covid test](project.sort.info)
+    - not [826](project.sort.price)
+    - not [1711](project.sort.price)
+    - not [1777](project.sort.price)
+    - not [1208](project.sort.price)
+    - not [984](project.sort.price)
+    - not [1534](project.sort.price)
+    - not [806](project.sort.price)
+    - not [2000](project.sort.price)
+    - not [1755](project.sort.price)
+    - not [260](project.sort.price)
     - not [whenever](project.sort.month_or_phrase)
     - not [anytime](project.sort.month_or_phrase)
     - not [tomorrow](project.sort.month_or_phrase)
@@ -1181,12 +1282,15 @@ nlu:
     - quarantine requirements
     - quarantine requirement
     - quarantine information
+    - quarantine
 
 - synonym: project:testing
   examples: |
     - testing requirements
     - testing requirement
     - testing information
+    - testing
+    - covid test
 
 - synonym: project:anytime
   examples: |
@@ -1249,21 +1353,85 @@ nlu:
   examples: |
     - December
 
-- synonym: project:price_100
+- synonym: project:price_5
   examples: |
-    - 100
+    - 5
 
-- synonym: project:price_50
+- synonym: project:price_10
   examples: |
-    - 50
+    - 10
+
+- synonym: project:price_15
+  examples: |
+    - 15
+
+- synonym: project:price_20
+  examples: |
+    - 20
+
+- synonym: project:price_25
+  examples: |
+    - 25
+
+- synonym: project:price_30
+  examples: |
+    - 30
+
+- synonym: project:price_35
+  examples: |
+    - 35
 
 - synonym: project:price_40
   examples: |
     - 40
 
-- synonym: project:price_30
+- synonym: project:price_45
   examples: |
-    - 30
+    - 45
+
+- synonym: project:price_50
+  examples: |
+    - 50
+
+- synonym: project:price_55
+  examples: |
+    - 55
+
+- synonym: project:price_60
+  examples: |
+    - 60
+
+- synonym: project:price_65
+  examples: |
+    - 65
+
+- synonym: project:price_70
+  examples: |
+    - 70
+
+- synonym: project:price_75
+  examples: |
+    - 75
+
+- synonym: project:price_80
+  examples: |
+    - 80
+
+- synonym: project:price_85
+  examples: |
+    - 85
+
+- synonym: project:price_90
+  examples: |
+    - 90
+
+- synonym: project:price_95
+  examples: |
+    - 95
+
+- synonym: project:price_100
+  examples: |
+    - 100
 
 - synonym: project:price_no_limit
   examples: |
@@ -24302,287 +24470,6 @@ nlu:
     - Beitbridge
     - Epworth
     - Chitungwiza
-
-- lookup: project.sort.currency
-  examples: |
-    - Euro
-    - Lek
-    - Algerian Dinar
-    - US Dollar
-    - East Caribbean Dollar
-    - Argentine Peso
-    - Armenian Dram
-    - Aruban Florin
-    - Australian Dollar
-    - Bahamian Dollar
-    - Bahraini Dinar
-    - Taka
-    - Barbados Dollar
-    - Belize Dollar
-    - CFA Franc BCEAO
-    - Bermudian Dollar
-    - Indian Rupee
-    - Ngultrum
-    - Boliviano
-    - Convertible Mark
-    - Pula
-    - Norwegian Krone
-    - Brazilian Real
-    - Brunei Dollar
-    - Bulgarian Lev
-    - Burundi Franc
-    - Cabo Verde Escudo
-    - Riel
-    - CFA Franc BEAC
-    - Canadian Dollar
-    - Cayman Islands Dollar
-    - Chilean Peso
-    - Yuan Renminbi
-    - Colombian Peso
-    - Comorian Franc 
-    - Congolese Franc
-    - New Zealand Dollar
-    - Costa Rican Colon
-    - Kuna
-    - Cuban Peso
-    - Peso Convertible
-    - Netherlands Antillean Guilder
-    - Czech Koruna
-    - Danish Krone
-    - Djibouti Franc
-    - Dominican Peso
-    - Egyptian Pound
-    - Nakfa
-    - Lilangeni
-    - Ethiopian Birr
-    - Fiji Dollar
-    - CFP Franc
-    - Dalasi
-    - Lari
-    - Gibraltar Pound
-    - Quetzal
-    - Pound Sterling
-    - Guinean Franc
-    - Guyana Dollar
-    - Gourde
-    - Lempira
-    - Hong Kong Dollar
-    - Forint
-    - Iceland Krona
-    - Rupiah
-    - Iranian Rial
-    - Iraqi Dinar
-    - New Israeli Sheqel
-    - Jamaican Dollar
-    - Yen
-    - Jordanian Dinar
-    - Tenge
-    - Kenyan Shilling
-    - North Korean Won
-    - Won
-    - Kuwaiti Dinar
-    - Som
-    - Lao Kip
-    - Lebanese Pound
-    - Rand
-    - Liberian Dollar
-    - Libyan Dinar
-    - Swiss Franc
-    - Pataca
-    - Denar
-    - Malagasy Ariary
-    - Malawi Kwacha
-    - Malaysian Ringgit
-    - Rufiyaa
-    - Ouguiya
-    - Mauritius Rupee
-    - Moldovan Leu
-    - Tugrik
-    - Moroccan Dirham
-    - Namibia Dollar
-    - Nepalese Rupee
-    - Cordoba Oro
-    - Naira
-    - Rial Omani
-    - Pakistan Rupee
-    - Balboa
-    - Kina
-    - Guarani
-    - Philippine Peso
-    - Qatari Rial
-    - Romanian Leu
-    - Rwanda Franc
-    - Saint Helena Pound
-    - Tala
-    - Dobra
-    - Saudi Riyal
-    - Seychelles Rupee
-    - Leone
-    - Singapore Dollar
-    - Solomon Islands Dollar
-    - Somali Shilling
-    - Sri Lanka Rupee
-    - Surinam Dollar
-    - Swedish Krona
-    - Syrian Pound
-    - New Taiwan Dollar
-    - Somoni
-    - Tanzanian Shilling
-    - Baht
-    - Pa'anga
-    - Trinidad and Tobago Dollar
-    - Tunisian Dinar
-    - Turkish Lira
-    - Turkmenistan New Manat
-    - Hryvnia
-    - UAE Dirham
-    - Peso Uruguayo
-    - Uzbekistan Sum
-    - Vatu
-    - Dong
-    - Yemeni Rial
-    - Croatian Kuna
-    - Kwacha
-    - Nuevo Sol 
-    - New Romanian Leu 
-    - New Turkish Lira
-    - EUR
-    - ALL
-    - DZD
-    - USD
-    - XCD
-    - ARS
-    - AMD
-    - AWG
-    - AUD
-    - BSD
-    - BHD
-    - BDT
-    - BBD
-    - BZD
-    - XOF
-    - BMD
-    - INR
-    - BTN
-    - BOB
-    - BAM
-    - BWP
-    - NOK
-    - BRL
-    - BND
-    - BGN
-    - BIF
-    - CVE
-    - KHR
-    - XAF
-    - CAD
-    - KYD
-    - CLP
-    - CNY
-    - COP
-    - KMF
-    - CDF
-    - NZD
-    - CRC
-    - HRK
-    - CUP
-    - CUC
-    - ANG
-    - CZK
-    - DKK
-    - DJF
-    - DOP
-    - EGP
-    - ERN
-    - SZL
-    - ETB
-    - FJD
-    - XPF
-    - GMD
-    - GEL
-    - GIP
-    - GTQ
-    - GBP
-    - GNF
-    - GYD
-    - HTG
-    - HNL
-    - HKD
-    - HUF
-    - ISK
-    - IDR
-    - IRR
-    - IQD
-    - ILS
-    - JMD
-    - JPY
-    - JOD
-    - KZT
-    - KES
-    - KPW
-    - KRW
-    - KWD
-    - KGS
-    - LAK
-    - LBP
-    - ZAR
-    - LRD
-    - LYD
-    - CHF
-    - MOP
-    - MKD
-    - MGA
-    - MWK
-    - MYR
-    - MVR
-    - MRO
-    - MUR
-    - MDL
-    - MNT
-    - MAD
-    - NAD
-    - NPR
-    - NIO
-    - NGN
-    - OMR
-    - PKR
-    - PAB
-    - PGK
-    - PYG
-    - PHP
-    - QAR
-    - RON
-    - RWF
-    - SHP
-    - WST
-    - STD
-    - SAR
-    - SCR
-    - SLL
-    - SGD
-    - SBD
-    - SOS
-    - LKR
-    - SRD
-    - SEK
-    - SYP
-    - TWD
-    - TJS
-    - TZS
-    - THB
-    - TOP
-    - TTD
-    - TND
-    - TRY
-    - TMT
-    - UAH
-    - AED
-    - UYU
-    - UZS
-    - VUV
-    - VND
-    - YER
-    - PEN
 
 - lookup: project.sort.price
   examples: |

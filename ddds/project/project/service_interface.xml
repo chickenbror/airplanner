@@ -6,9 +6,9 @@
             <parameter predicate="city_from" format="grammar_entry"/>
             <parameter predicate="city_to" format="grammar_entry"/>
 
-            <parameter predicate="month_or_phrase_from" format="grammar_entry"/>
-            <parameter predicate="year_from" format="grammar_entry" optional="true"/>
-            <parameter predicate="day_from" format="grammar_entry" optional="true"/>
+            <parameter predicate="month_or_phrase_from" format="value"/>
+            <parameter predicate="year_from" format="value" optional="true"/>
+            <parameter predicate="day_from" format="value" optional="true"/>
             
             <parameter predicate="max_price" format="grammar_entry" optional="true"/>
             <parameter predicate="direct_choice" format="value" optional="true"/>

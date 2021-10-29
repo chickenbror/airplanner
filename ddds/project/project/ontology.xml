@@ -2,18 +2,18 @@
 <ontology name="ProjectOntology">
 
     <!-- month_or_phrase = "phrase or month-name" since they are mandatory, while year/day can be optional -->
-    <sort name="month_or_phrase" dynamic="true"/>
+    <sort name="month_or_phrase"/>
         <predicate name="month_or_phrase_from" sort="month_or_phrase"/>
         <!-- <predicate name="month_or_phrase_to" sort="month_or_phrase"/> -->
             <individual name="anytime" sort="month_or_phrase"/>
             <individual name="tomorrow" sort="month_or_phrase"/>
             <individual name="next_month" sort="month_or_phrase"/>
-            <individual name="jan" sort="month_or_phrase"/>  <individual name="feb" sort="month_or_phrase"/>
-            <individual name="mar" sort="month_or_phrase"/>  <individual name="apr" sort="month_or_phrase"/>
-            <individual name="may" sort="month_or_phrase"/>  <individual name="jun" sort="month_or_phrase"/>
-            <individual name="jul" sort="month_or_phrase"/>  <individual name="aug" sort="month_or_phrase"/>
-            <individual name="sep" sort="month_or_phrase"/>  <individual name="oct" sort="month_or_phrase"/>
-            <individual name="nov" sort="month_or_phrase"/>  <individual name="dec" sort="month_or_phrase"/>
+            <individual name="January" sort="month_or_phrase"/>  <individual name="February" sort="month_or_phrase"/>
+            <individual name="March" sort="month_or_phrase"/>  <individual name="April" sort="month_or_phrase"/>
+            <individual name="May" sort="month_or_phrase"/>  <individual name="June" sort="month_or_phrase"/>
+            <individual name="July" sort="month_or_phrase"/>  <individual name="August" sort="month_or_phrase"/>
+            <individual name="September" sort="month_or_phrase"/>  <individual name="October" sort="month_or_phrase"/>
+            <individual name="November" sort="month_or_phrase"/>  <individual name="December" sort="month_or_phrase"/>
 
     <sort name="year" />
         <predicate name="year_from" sort="year"/>
@@ -46,7 +46,7 @@
             <individual name="city_arn" sort="city"/>
             <individual name="city_bcn" sort="city"/>
 
-    <sort name="info" dynamic="true"/>
+    <sort name="info" />
         <predicate name="info_choice" sort="info"/>
             <individual name="entry" sort="info"/>
             <individual name="quarantine" sort="info"/>

@@ -35,6 +35,9 @@
       <item>travel restrictions</item>  <item>travel information</item> 
   
       <item>travel restrictions in <slot predicate="city_to"/> </item>
+      <item> are there travel restrictions in <slot predicate="city_to"/> </item>
+      <item> is there any restrictions in <slot predicate="city_to"/> </item>
+      <item> are there any restrictions in <slot predicate="city_to"/> </item>
       <item>travel information in <slot predicate="city_to"/> </item>
       <item>what's the travel information in <slot predicate="city_to"/> </item>
       <item>what are the travel restrictions in <slot predicate="city_to"/> </item>
@@ -169,18 +172,18 @@
 
   <individual name="tomorrow">tomorrow</individual>
   <individual name="next_month">next month</individual>
-  <individual name="jan">January</individual>
-  <individual name="feb">February</individual>
-  <individual name="mar">March</individual>
-  <individual name="apr">April</individual>
-  <individual name="may">May</individual>
-  <individual name="jun">June</individual>
-  <individual name="jul">July</individual>
-  <individual name="aug">August</individual>
-  <individual name="sep">September</individual>
-  <individual name="oct">October</individual>
-  <individual name="nov">November</individual>
-  <individual name="dec">December</individual>
+  <individual name="January">January</individual>
+  <individual name="February">February</individual>
+  <individual name="March">March</individual>
+  <individual name="April">April</individual>
+  <individual name="May">May</individual>
+  <individual name="June">June</individual>
+  <individual name="July">July</individual>
+  <individual name="August">August</individual>
+  <individual name="September">September</individual>
+  <individual name="October">October</individual>
+  <individual name="November">November</individual>
+  <individual name="December">December</individual>
 
 <!-- days -->
   <individual name="d01">1</individual>  <individual name="d02">2</individual>  <individual name="d03">3</individual>  

@@ -145,7 +145,11 @@ def validator_response(is_valid):
 def lookup_currency_code(name):
     with open('currency_codes.json', 'r') as file:
         currency_codes = json.load(file)
-        return currency_codes[name]
+        for currency_key in [name, name.upper()]:
+          try:
+            return currency_codes[currency_key]
+          except KeyError:
+            pass
 def read_facts(predicate, payload, value='gr', default=""):
   facts = payload["context"]["facts"]
   if predicate not in facts:
@@ -173,15 +177,15 @@ def get_airport_id(city):
     except Exception:
         return ''
 def get_currency():
+    # return 'SEK'
     try:
         with open('currency.txt', 'r') as f:
             currency = f.readline()
+            if not currency:
+              currency = 'EUR' 
     except Exception:
         currency = 'EUR'  
-    # global CURRENCY
-    # if not CURRENCY:
-    #   CURRENCY = 'EUR'
-    # currency = CURRENCY
+ 
     return currency
 def get_quotes(from_airport,to_airport,start_date,end_date=''):
     country_code, currency = 'SE', get_currency() # Read the currency, EUR by default 
@@ -245,7 +249,7 @@ def quote_flights(from_city_id, to_city_id, from_date, to_date='', max_price=Non
 def preds_to_datestr(D,MorP,Y):
     date_items = []
     for item in (D,MorP,Y):
-        if item in ('anytime','tomorrow','next month'):
+        if item in ('anytime','tomorrow','next month', 'next_month'):
             return item
         if item:
             date_items.append(item)
@@ -255,11 +259,11 @@ def parse_said_date(date):
     
     # date = Dec, Dec 2021, 25 Dec, Dec 25, Dec 25 2021, 25 Dec 2021, or anytime/tomorrow/next month
     # returns: yyyy-mm, yy-mm, anytime, or None
-    if date in ['anytime','tomorrow','next month']:
+    if date in ['anytime','tomorrow','next month', 'next_month']:
         today = datetime.today()
         if date == 'tomorrow':
             return (today + timedelta(days=1)).strftime("%Y-%m-%d")
-        if date == 'next month':
+        if date in ['next month', 'next_month']:
             return ((today.replace(day=1) + timedelta(days=32)).replace(day=1)).strftime("%Y-%m")
         if date == 'anytime':
             return 'anytime'
@@ -373,7 +377,7 @@ def covid_info(city, info_choice):
 
   if "No summary available - please follow the link to learn more." in info:
         info += '  '+travel_info_latest['source']
-        
+
   return info
 
 @app.route("/search_flights", methods=['POST'])
@@ -384,16 +388,20 @@ def search_flights():
 
     city_from = read_facts("city_from", payload)
     city_to = read_facts("city_to", payload)
-    month_or_phrase = read_facts("month_or_phrase_from", payload )
-    day = read_facts("day_from", payload) # daystr or ""
-    year = read_facts("year_from", payload) # yearstr or ""
+    month_or_phrase = read_facts("month_or_phrase_from", payload, 'v' )
+    day = read_facts("day_from", payload, 'v') # daystr or ""
+    if day:
+      day = day.strip('d0')
+    year = read_facts("year_from", payload, 'v') # yearstr or ""
+    if year:
+      year = year.strip('y')
 
     max_price = read_facts('max_price', payload) # number_str
     max_price = None if (not max_price or max_price=='no limit') else float(max_price) # convert to float/None
     direct_choice = read_facts('direct_choice', payload, 'v') # direct_only/non_direct_only/both/""
     direct_only = True if direct_choice=='direct_only' else False 
 
-    # testout = ' | '.join((city_from, city_to, date_from, date_to))
+    # testout = ' | '.join((city_from, city_to, day, month_or_phrase, year))
     # return query_response(value=testout, grammar_entry=None)
 
     # check cities
@@ -464,19 +472,19 @@ def set_currency():
  
     currency_now = get_currency()
     new_currency = read_facts('currency_to_set', payload, 'v')
-    msg = f'currency to be set from "{currency_now}"" to "{new_currency}"'
-    logger.info(msg)
-    try: # eg (Swedish Krona)=>'SEK' and save to file
-      new_currency = lookup_currency_code(new_currency)
-      with open('currency.txt', 'w') as f:
-        f.write(new_currency)
-    except KeyError:
-      msg = f'cannot find "{new_currency}"'
-      pass
+    # msg = f'currency to be set from "{currency_now}"" to "{new_currency}"'
+    # logger.info(msg)
+    # try: # eg (Swedish Krona)=>'SEK' and save to file
+    new_currency = lookup_currency_code(new_currency)
+    with open('currency.txt', 'w') as f:
+      f.write(new_currency)
+    # except KeyError:
+    #   msg = f'cannot find "{new_currency}"'
+    #   pass
     
 
-    msg = f'currency set from {currency_now} to {get_currency()}'
-    logger.info(msg)
+    # msg = f'currency set from {currency_now} to {get_currency()}'
+    # logger.info(msg)
     return action_success_response()
 
 
